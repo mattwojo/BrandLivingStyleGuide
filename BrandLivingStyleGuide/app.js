@@ -30,6 +30,10 @@ app.get('/grid', function(req,res) {
     res.render('grid.jade', {title: 'grid'});
 });
 
+app.get('/colorpalette', function(req,res) {
+    res.render('colorpalette.jade', {title: 'colorpalette'});
+});
+
 app.use(favicon());
 app.use(logger('dev'));
 app.use(bodyParser.json());
