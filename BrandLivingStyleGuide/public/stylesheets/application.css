@@ -294,35 +294,4 @@ header {
     color: #373737;
     border: none; }
 
-/* line 1, /home/bolle/Desktop/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/colorpalette */
-.alphaColor, .bravoColor, .charlieColor, .accentColor, .greyColor {
-  display: inline-block;
-  height: 100px;
-  width: 100px;
-  border-radius: 50%;
-  padding-top: 2.5em;
-  margin: 0.5em;
-  color: white;
-  text-align: center; }
-
-/* line 13, /home/bolle/Desktop/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/colorpalette */
-.alphaColor {
-  background-color: #5E8C6A; }
-
-/* line 18, /home/bolle/Desktop/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/colorpalette */
-.bravoColor {
-  background-color: #88A65E; }
-
-/* line 23, /home/bolle/Desktop/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/colorpalette */
-.charlieColor {
-  background-color: #BFB35A; }
-
-/* line 28, /home/bolle/Desktop/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/colorpalette */
-.accentColor {
-  background-color: #8C2318; }
-
-/* line 33, /home/bolle/Desktop/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/colorpalette */
-.greyColor {
-  background-color: #5D5C5D; }
-
 /*# sourceMappingURL=application.css.map */
