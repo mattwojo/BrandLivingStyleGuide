@@ -1,5 +1,16 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to Buttons
+  main
+    h1 Buttons
+    h2.example-button-text Example
+    button.primary-button Primary
+    button.secondary-button Secondary
+    section
+      article.code-example
+        h3.code-title The Code
+        xmp.code <button class="primary-button"></button>
+        xmp.code <button class="secondary-button"></button>
+      aside.notes
+        h3.notes-title Notes
+        p INSERT NOTES HERE

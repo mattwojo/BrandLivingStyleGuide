@@ -22,7 +22,7 @@
 }
 
 main {
-  padding: 2rem;
+  padding: 0 1rem;
   h1 {
     margin-bottom: 2rem;
   }
@@ -32,11 +32,18 @@ main {
 }
 
 .code-example {
-  width: 48%;
+  width: 50%;
   float: left;
+  margin-top: 2rem;
 }
 
 .notes {
-  width: 48%;
+  width: 50%;
   float: right;
+  margin-top: 2rem;
 }
+
+.code-title, .notes-title {
+  margin-bottom: 2rem;
+}
+
