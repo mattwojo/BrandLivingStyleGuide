@@ -1,0 +1,32 @@
+.primary-button {
+  background-color: $color-alpha-dark;
+  color: $color-grey-lightest;
+  border-radius: 1em;
+  font-family: $default;
+  padding: .5em 1.5em;
+  font-size: $small;
+  margin: 0 1.5em 1em 1.5em;
+  border: none;
+  &:hover {
+    background-color: $color-alpha-light;
+    color: $color-grey-dark;
+    border: none;
+  }
+}
+
+.secondary-button {
+  background-color: $color-bravo-dark;
+  color: $color-grey-lightest;
+  border-radius: 1em;
+  font-family: $default;
+  padding: .5em 1.5em;
+  font-size: $small;
+  border: none;
+  &:hover {
+    background-color: $color-bravo-light;
+    color: $color-grey-dark;
+    border: none;
+  }
+}
+
+

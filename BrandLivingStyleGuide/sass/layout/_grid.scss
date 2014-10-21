@@ -1,0 +1,57 @@
+//Grid Setup
+
+//Sets width of each column
+@function findColumnWidth($cols) {
+  $result : ((100 - ( 2 * ($cols - 1))) / $cols);
+  @return $result;
+}
+
+$colWidth: findColumnWidth($cols);
+$gutterWidth: 2%; //Sets width of each gutter
+
+/* Mobile Grid Resets all Columns to 100%*/
+@for $i from 1 through $cols {
+  .grid_#{$i} {
+    width: 100%;
+    margin: 0 1% 1% 1%;
+    float: left;
+    display: block;
+    //Sets grid widths at larger screen sizes
+    @include breakpoint(desktop) {
+      $gridWidth : ($i * $colWidth) + ($gutterWidth * ($i - 1)) ;
+      width: $gridWidth;
+    }
+  }
+}
+
+.far-left {
+  margin-left: 0px;
+}
+
+.far-right {
+  margin-right: 0px;
+}
+
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.clearfix:after {
+  clear: both;
+  content :' ';
+  display: block;
+  font-size: 0;
+  line-height: 0;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+html .clearfix, *:first-child+html .clearfix {
+  zoom:1
+}

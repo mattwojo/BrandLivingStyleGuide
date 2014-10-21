@@ -1,7 +1,24 @@
 doctype html
-html
+html(lang="en")
   head
-    title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
+    title= pageTitle
+    link(rel="stylesheet" href="stylesheets/application.css")
   body
-    block content
+    nav.nav-index
+      ul.nav-index_ul
+        a.nav-index_link(href='#/grid')
+          li.nav-index_li
+            | Grid
+        a.nav-index_link(href='#/buttons')
+          li.nav-index_li
+            | Buttons
+    main.content
+      block content
+
+    header
+      h1
+        | Sample Title
+
+    footer
+    //- End of view
+  script(type='text/javascript', src='app.js')

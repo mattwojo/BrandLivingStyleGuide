@@ -1,0 +1,36 @@
+.nav-index {
+  position: fixed;
+  background-color: $navBGColor;
+  color: $navColor;
+  width: 24%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.nav-index_ul {
+  width: 100%;
+}
+
+.nav-index_li {
+  display: block;
+  width: 100%;
+  font-family: 'Open Sans';
+  padding: $small;
+  border-top: 1px dotted $color-alpha-dark;
+  &:hover {
+    background-color: $navBGColorHover;
+  }
+}
+
+.nav-index_link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.content {
+  width: 76%;
+  position: relative;
+  padding: 4%;
+  @include calc(left, "25% - 1em")
+}

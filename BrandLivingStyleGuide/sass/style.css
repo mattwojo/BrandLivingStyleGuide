@@ -1,0 +1,263 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 16px;
+  font-family: 'Open Sans';
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+h1 {
+  color: #5E8C6A;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 4.236rem; }
+
+h2 {
+  color: #BFB35A;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2.618rem; }
+
+h3 {
+  color: #dcd5a3;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.618rem; }
+
+p {
+  color: #5D5C5D;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem; }
+
+/* Mobile Grid Resets all Columns to 100%*/
+.grid_1 {
+  width: 100%;
+  margin: 0 1% 1% 1%;
+  float: left;
+  display: block; }
+  @media screen and (min-width:800px) {
+    .grid_1 {
+      width: 6.5%; } }
+
+.grid_2 {
+  width: 100%;
+  margin: 0 1% 1% 1%;
+  float: left;
+  display: block; }
+  @media screen and (min-width:800px) {
+    .grid_2 {
+      width: 15%; } }
+
+.grid_3, .nav-container {
+  width: 100%;
+  margin: 0 1% 1% 1%;
+  float: left;
+  display: block; }
+  @media screen and (min-width:800px) {
+    .grid_3, .nav-container {
+      width: 23.5%; } }
+
+.grid_4 {
+  width: 100%;
+  margin: 0 1% 1% 1%;
+  float: left;
+  display: block; }
+  @media screen and (min-width:800px) {
+    .grid_4 {
+      width: 32%; } }
+
+.grid_5 {
+  width: 100%;
+  margin: 0 1% 1% 1%;
+  float: left;
+  display: block; }
+  @media screen and (min-width:800px) {
+    .grid_5 {
+      width: 40.5%; } }
+
+.grid_6 {
+  width: 100%;
+  margin: 0 1% 1% 1%;
+  float: left;
+  display: block; }
+  @media screen and (min-width:800px) {
+    .grid_6 {
+      width: 49%; } }
+
+.grid_7 {
+  width: 100%;
+  margin: 0 1% 1% 1%;
+  float: left;
+  display: block; }
+  @media screen and (min-width:800px) {
+    .grid_7 {
+      width: 57.5%; } }
+
+.grid_8 {
+  width: 100%;
+  margin: 0 1% 1% 1%;
+  float: left;
+  display: block; }
+  @media screen and (min-width:800px) {
+    .grid_8 {
+      width: 66%; } }
+
+.grid_9, header {
+  width: 100%;
+  margin: 0 1% 1% 1%;
+  float: left;
+  display: block; }
+  @media screen and (min-width:800px) {
+    .grid_9, header {
+      width: 74.5%; } }
+
+.grid_10 {
+  width: 100%;
+  margin: 0 1% 1% 1%;
+  float: left;
+  display: block; }
+  @media screen and (min-width:800px) {
+    .grid_10 {
+      width: 83%; } }
+
+.grid_11 {
+  width: 100%;
+  margin: 0 1% 1% 1%;
+  float: left;
+  display: block; }
+  @media screen and (min-width:800px) {
+    .grid_11 {
+      width: 91.5%; } }
+
+.grid_12 {
+  width: 100%;
+  margin: 0 1% 1% 1%;
+  float: left;
+  display: block; }
+  @media screen and (min-width:800px) {
+    .grid_12 {
+      width: 100%; } }
+
+.far-left, .nav-container {
+  margin-left: 0px; }
+
+.far-right, header {
+  margin-right: 0px; }
+
+.clear, header {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0; }
+
+.clearfix:after {
+  clear: both;
+  content: ' ';
+  display: block;
+  font-size: 0;
+  line-height: 0;
+  visibility: hidden;
+  width: 0;
+  height: 0; }
+
+html .clearfix, *:first-child + html .clearfix {
+  zoom: 1; }
+
+.nav-container {
+  clear: both; }
+
+.nav-index {
+  position: fixed;
+  float: none;
+  background-color: #5E8C6A;
+  color: #F2F2F2;
+  width: inherit;
+  height: 100%;
+  top: 0;
+  left: 0; }
+
+<<<<<<< HEAD
+main {
+  padding: 2rem; }
+  main h1 {
+    margin-bottom: 2rem; }
+  main h2 {
+    margin-bottom: 1.5rem; }
+
+.code-example {
+  width: 48%;
+  float: left; }
+
+.notes {
+  width: 48%;
+  float: right; }
+
+.primary-button {
+  background-color: #354f3c;
+  color: #F2F2F2;
+  border-radius: 1em;
+  font-family: 'Open Sans', sans-serif;
+  padding: 0.5em 1.5em;
+  font-size: 1rem;
+  margin: 0 1.5em 1em 1.5em; }
+  .primary-button:hover {
+    background-color: #97b9a0;
+    color: #373737; }
+
+.secondary-button {
+  background-color: #536638;
+  color: #F2F2F2;
+  border-radius: 1em;
+  font-family: 'Open Sans', sans-serif;
+  padding: 0.5em 1.5em;
+  font-size: 1rem;
+  border: none; }
+  .secondary-button:hover {
+    background-color: #b9caa0;
+    color: #373737;
+    border: none; }
+=======
+.nav-index_ul {
+  width: 100%; }
+
+.nav-index_li {
+  display: block;
+  width: 100%;
+  font-family: 'Open Sans';
+  padding: 1rem;
+  border-top: 1px dotted #354f3c; }
+  .nav-index_li:hover {
+    background-color: #354f3c; }
+
+.nav-index_link {
+  color: inherit;
+  text-decoration: none; }
+
+header {
+  height: 6.854rem;
+  padding-top: 2.618rem; }

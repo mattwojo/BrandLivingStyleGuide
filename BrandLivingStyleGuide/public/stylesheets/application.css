@@ -1,2 +1,297 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 18, /Users/margaretwalker/Desktop/CodeFellows-Gits/14-BrandLivingStyleGuide/BrandLivingStyleGuide/sass/base/reset */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 16px;
+  font-family: 'Open Sans';
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+/* line 28, /Users/margaretwalker/Desktop/CodeFellows-Gits/14-BrandLivingStyleGuide/BrandLivingStyleGuide/sass/base/reset */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+/* line 31, /Users/margaretwalker/Desktop/CodeFellows-Gits/14-BrandLivingStyleGuide/BrandLivingStyleGuide/sass/base/reset */
+body {
+  line-height: 1; }
+
+/* line 34, /Users/margaretwalker/Desktop/CodeFellows-Gits/14-BrandLivingStyleGuide/BrandLivingStyleGuide/sass/base/reset */
+ol, ul {
+  list-style: none; }
+
+/* line 37, /Users/margaretwalker/Desktop/CodeFellows-Gits/14-BrandLivingStyleGuide/BrandLivingStyleGuide/sass/base/reset */
+blockquote, q {
+  quotes: none; }
+
+/* line 41, /Users/margaretwalker/Desktop/CodeFellows-Gits/14-BrandLivingStyleGuide/BrandLivingStyleGuide/sass/base/reset */
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+/* line 45, /Users/margaretwalker/Desktop/CodeFellows-Gits/14-BrandLivingStyleGuide/BrandLivingStyleGuide/sass/base/reset */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 49, /Users/margaretwalker/Desktop/CodeFellows-Gits/14-BrandLivingStyleGuide/BrandLivingStyleGuide/sass/base/reset */
+* {
+  box-sizing: border-box; }
+
+/* line 1, /Users/margaretwalker/Desktop/CodeFellows-Gits/14-BrandLivingStyleGuide/BrandLivingStyleGuide/sass/base/typography */
+h1 {
+  color: #5E8C6A;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 4.236rem; }
+
+/* line 7, /Users/margaretwalker/Desktop/CodeFellows-Gits/14-BrandLivingStyleGuide/BrandLivingStyleGuide/sass/base/typography */
+h2 {
+  color: #BFB35A;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2.618rem; }
+
+/* line 13, /Users/margaretwalker/Desktop/CodeFellows-Gits/14-BrandLivingStyleGuide/BrandLivingStyleGuide/sass/base/typography */
+h3 {
+  color: #dcd5a3;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.618rem; }
+
+/* line 19, /Users/margaretwalker/Desktop/CodeFellows-Gits/14-BrandLivingStyleGuide/BrandLivingStyleGuide/sass/base/typography */
+p {
+  color: #5D5C5D;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem; }
+
+/* Mobile Grid Resets all Columns to 100%*/
+/* line 14, /Users/margaretwalker/Desktop/CodeFellows-Gits/14-BrandLivingStyleGuide/BrandLivingStyleGuide/sass/layout/grid */
+.grid_1 {
+  width: 100%;
+  margin: 0 1% 1% 1%;
+  float: left;
+  display: block; }
+  @media screen and (min-width:800px) {
+    .grid_1 {
+      width: 6.5%; } }
+
+/* line 14, /Users/margaretwalker/Desktop/CodeFellows-Gits/14-BrandLivingStyleGuide/BrandLivingStyleGuide/sass/layout/grid */
+.grid_2 {
+  width: 100%;
+  margin: 0 1% 1% 1%;
+  float: left;
+  display: block; }
+  @media screen and (min-width:800px) {
+    .grid_2 {
+      width: 15%; } }
+
+/* line 14, /Users/margaretwalker/Desktop/CodeFellows-Gits/14-BrandLivingStyleGuide/BrandLivingStyleGuide/sass/layout/grid */
+.grid_3 {
+  width: 100%;
+  margin: 0 1% 1% 1%;
+  float: left;
+  display: block; }
+  @media screen and (min-width:800px) {
+    .grid_3 {
+      width: 23.5%; } }
+
+/* line 14, /Users/margaretwalker/Desktop/CodeFellows-Gits/14-BrandLivingStyleGuide/BrandLivingStyleGuide/sass/layout/grid */
+.grid_4 {
+  width: 100%;
+  margin: 0 1% 1% 1%;
+  float: left;
+  display: block; }
+  @media screen and (min-width:800px) {
+    .grid_4 {
+      width: 32%; } }
+
+/* line 14, /Users/margaretwalker/Desktop/CodeFellows-Gits/14-BrandLivingStyleGuide/BrandLivingStyleGuide/sass/layout/grid */
+.grid_5 {
+  width: 100%;
+  margin: 0 1% 1% 1%;
+  float: left;
+  display: block; }
+  @media screen and (min-width:800px) {
+    .grid_5 {
+      width: 40.5%; } }
+
+/* line 14, /Users/margaretwalker/Desktop/CodeFellows-Gits/14-BrandLivingStyleGuide/BrandLivingStyleGuide/sass/layout/grid */
+.grid_6 {
+  width: 100%;
+  margin: 0 1% 1% 1%;
+  float: left;
+  display: block; }
+  @media screen and (min-width:800px) {
+    .grid_6 {
+      width: 49%; } }
+
+/* line 14, /Users/margaretwalker/Desktop/CodeFellows-Gits/14-BrandLivingStyleGuide/BrandLivingStyleGuide/sass/layout/grid */
+.grid_7 {
+  width: 100%;
+  margin: 0 1% 1% 1%;
+  float: left;
+  display: block; }
+  @media screen and (min-width:800px) {
+    .grid_7 {
+      width: 57.5%; } }
+
+/* line 14, /Users/margaretwalker/Desktop/CodeFellows-Gits/14-BrandLivingStyleGuide/BrandLivingStyleGuide/sass/layout/grid */
+.grid_8 {
+  width: 100%;
+  margin: 0 1% 1% 1%;
+  float: left;
+  display: block; }
+  @media screen and (min-width:800px) {
+    .grid_8 {
+      width: 66%; } }
+
+/* line 14, /Users/margaretwalker/Desktop/CodeFellows-Gits/14-BrandLivingStyleGuide/BrandLivingStyleGuide/sass/layout/grid */
+.grid_9, header {
+  width: 100%;
+  margin: 0 1% 1% 1%;
+  float: left;
+  display: block; }
+  @media screen and (min-width:800px) {
+    .grid_9, header {
+      width: 74.5%; } }
+
+/* line 14, /Users/margaretwalker/Desktop/CodeFellows-Gits/14-BrandLivingStyleGuide/BrandLivingStyleGuide/sass/layout/grid */
+.grid_10 {
+  width: 100%;
+  margin: 0 1% 1% 1%;
+  float: left;
+  display: block; }
+  @media screen and (min-width:800px) {
+    .grid_10 {
+      width: 83%; } }
+
+/* line 14, /Users/margaretwalker/Desktop/CodeFellows-Gits/14-BrandLivingStyleGuide/BrandLivingStyleGuide/sass/layout/grid */
+.grid_11 {
+  width: 100%;
+  margin: 0 1% 1% 1%;
+  float: left;
+  display: block; }
+  @media screen and (min-width:800px) {
+    .grid_11 {
+      width: 91.5%; } }
+
+/* line 14, /Users/margaretwalker/Desktop/CodeFellows-Gits/14-BrandLivingStyleGuide/BrandLivingStyleGuide/sass/layout/grid */
+.grid_12 {
+  width: 100%;
+  margin: 0 1% 1% 1%;
+  float: left;
+  display: block; }
+  @media screen and (min-width:800px) {
+    .grid_12 {
+      width: 100%; } }
+
+/* line 27, /Users/margaretwalker/Desktop/CodeFellows-Gits/14-BrandLivingStyleGuide/BrandLivingStyleGuide/sass/layout/grid */
+.far-left {
+  margin-left: 0px; }
+
+/* line 31, /Users/margaretwalker/Desktop/CodeFellows-Gits/14-BrandLivingStyleGuide/BrandLivingStyleGuide/sass/layout/grid */
+.far-right, header {
+  margin-right: 0px; }
+
+/* line 35, /Users/margaretwalker/Desktop/CodeFellows-Gits/14-BrandLivingStyleGuide/BrandLivingStyleGuide/sass/layout/grid */
+.clear, header {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0; }
+
+/* line 44, /Users/margaretwalker/Desktop/CodeFellows-Gits/14-BrandLivingStyleGuide/BrandLivingStyleGuide/sass/layout/grid */
+.clearfix:after {
+  clear: both;
+  content: ' ';
+  display: block;
+  font-size: 0;
+  line-height: 0;
+  visibility: hidden;
+  width: 0;
+  height: 0; }
+
+/* line 55, /Users/margaretwalker/Desktop/CodeFellows-Gits/14-BrandLivingStyleGuide/BrandLivingStyleGuide/sass/layout/grid */
+html .clearfix, *:first-child + html .clearfix {
+  zoom: 1; }
+
+/* line 1, /Users/margaretwalker/Desktop/CodeFellows-Gits/14-BrandLivingStyleGuide/BrandLivingStyleGuide/sass/layout/nav */
+.nav-index {
+  position: fixed;
+  background-color: #5E8C6A;
+  color: #F2F2F2;
+  width: 24%;
+  height: 100%;
+  top: 0;
+  left: 0; }
+
+/* line 11, /Users/margaretwalker/Desktop/CodeFellows-Gits/14-BrandLivingStyleGuide/BrandLivingStyleGuide/sass/layout/nav */
+.nav-index_ul {
+  width: 100%; }
+
+/* line 15, /Users/margaretwalker/Desktop/CodeFellows-Gits/14-BrandLivingStyleGuide/BrandLivingStyleGuide/sass/layout/nav */
+.nav-index_li {
+  display: block;
+  width: 100%;
+  font-family: 'Open Sans';
+  padding: 1rem;
+  border-top: 1px dotted #354f3c; }
+  /* line 21, /Users/margaretwalker/Desktop/CodeFellows-Gits/14-BrandLivingStyleGuide/BrandLivingStyleGuide/sass/layout/nav */
+  .nav-index_li:hover {
+    background-color: #354f3c; }
+
+/* line 26, /Users/margaretwalker/Desktop/CodeFellows-Gits/14-BrandLivingStyleGuide/BrandLivingStyleGuide/sass/layout/nav */
+.nav-index_link {
+  color: inherit;
+  text-decoration: none; }
+
+/* line 31, /Users/margaretwalker/Desktop/CodeFellows-Gits/14-BrandLivingStyleGuide/BrandLivingStyleGuide/sass/layout/nav */
+.content {
+  width: 76%;
+  position: relative;
+  padding: 4%;
+  left: -webkit-calc(25% - 1em);
+  left: calc(25% - 1em); }
+
+/* line 1, /Users/margaretwalker/Desktop/CodeFellows-Gits/14-BrandLivingStyleGuide/BrandLivingStyleGuide/sass/layout/header */
+header {
+  height: 6.854rem;
+  padding-top: 2.618rem; }
+
+/* line 1, /Users/margaretwalker/Desktop/CodeFellows-Gits/14-BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/buttons */
+.primary-button {
+  background-color: #354f3c;
+  color: #F2F2F2;
+  border-radius: 1em;
+  font-family: 'Open Sans', sans-serif;
+  padding: 0.5em 1.5em;
+  font-size: 1rem;
+  margin: 0 1.5em 1em 1.5em;
+  border: none; }
+  /* line 10, /Users/margaretwalker/Desktop/CodeFellows-Gits/14-BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/buttons */
+  .primary-button:hover {
+    background-color: #97b9a0;
+    color: #373737;
+    border: none; }
+
+/* line 17, /Users/margaretwalker/Desktop/CodeFellows-Gits/14-BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/buttons */
+.secondary-button {
+  background-color: #536638;
+  color: #F2F2F2;
+  border-radius: 1em;
+  font-family: 'Open Sans', sans-serif;
+  padding: 0.5em 1.5em;
+  font-size: 1rem;
+  border: none; }
+  /* line 25, /Users/margaretwalker/Desktop/CodeFellows-Gits/14-BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/buttons */
+  .secondary-button:hover {
+    background-color: #b9caa0;
+    color: #373737;
+    border: none; }
 
 /*# sourceMappingURL=application.css.map */

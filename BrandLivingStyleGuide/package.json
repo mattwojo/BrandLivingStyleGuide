@@ -18,6 +18,7 @@
     "static-favicon": "~1.0.0"
   },
   "devDependencies": {
-    "grunt-contrib-watch": "^0.6.1"
+    "grunt-contrib-watch": "^0.6.1",
+    "node-bourbon": "^1.2.3"
   }
 }

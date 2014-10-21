@@ -1,0 +1,42 @@
+.nav-index {
+  @extend .grid_3;
+  position: fixed;
+  float: none;
+  background-color: $navColor;
+  color: $navColor;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.nav-index_ul {
+
+}
+
+.nav-index_li {
+
+}
+
+.nav-index_link {
+
+}
+
+main {
+  padding: 2rem;
+  h1 {
+    margin-bottom: 2rem;
+  }
+  h2 {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.code-example {
+  width: 48%;
+  float: left;
+}
+
+.notes {
+  width: 48%;
+  float: right;
+}

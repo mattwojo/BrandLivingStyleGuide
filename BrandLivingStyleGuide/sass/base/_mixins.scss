@@ -1,0 +1,20 @@
+@mixin breakpoint($media) {
+  @if $media == tablet {
+    @media #{$tablet} {
+      @content;
+      }
+    }
+  @else if $media == desktop {
+    @media #{$desktop} {
+      @content;
+      }
+    }
+  @else {}
+}
+
+@mixin calc($property, $expression) {
+  #{$property}: -webkit-calc(#{$expression});
+  #{$property}: calc(#{$expression});
+}
+
+

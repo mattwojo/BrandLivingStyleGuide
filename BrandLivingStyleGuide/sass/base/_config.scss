@@ -1,0 +1,66 @@
+//Set Base Colors
+
+$color-alpha: #5E8C6A; //teal
+$color-alpha-dark: darken($color-alpha, 20%);
+$color-alpha-light: lighten($color-alpha, 20%);
+
+$color-bravo: #88A65E; //green
+$color-bravo-dark: darken($color-bravo, 20%);
+$color-bravo-light: lighten($color-bravo, 20%);
+
+$color-charlie: #BFB35A; //tan
+$color-charlie-dark: darken($color-charlie, 20%);
+$color-charlie-light: lighten($color-charlie, 20%);
+
+$color-accent: #8C2318; //red
+$color-accent-dark: darken($color-accent, 20%);
+$color-accent-light: lighten($color-accent, 20%);
+
+$color-grey-dark: #373737;
+$color-grey: #5D5C5D;
+$color-grey-light: #B7B7B7;
+$color-grey-lightest: #F2F2F2;
+
+//Assign Base Colors
+
+$linkColor: $color-accent;
+
+$paragraphColor: $color-grey;
+
+$navBGColor: $color-alpha;
+$navBGColorHover: $color-alpha-dark;
+$navColor: $color-grey-lightest;
+
+$headingColor-1: $color-alpha;
+$headingColor-2: $color-charlie;
+$headingColor-3: $color-charlie-light;
+
+$btnColor-bg: $color-alpha-light;
+$btnColor-text: $color-grey-dark;
+
+$linkHover: $color-accent-light;
+$linkHover-dark: $color-accent-dark;
+
+//Base Typography
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+$default: 'Open Sans', sans-serif;
+
+
+//Golden Ratio Variables
+$tiny: 0.381rem;
+$smaller: 0.618rem;
+$small: 1rem;
+$normal: 1.618rem;
+$large: 2.618rem;
+$huge: 4.236rem;
+$gigantic: 6.854rem;
+
+//Grid Column #
+$cols : 12; //Sets # of columns
+
+//Screen Sizes
+$tablet: 'screen and (min-width:320px)';
+$desktop : 'screen and (min-width:800px)';
+
+
+
