@@ -55,3 +55,9 @@ $gutterWidth: 2%; //Sets width of each gutter
 html .clearfix, *:first-child+html .clearfix {
   zoom:1
 }
+
+.grid-display {
+  background-color: $color-charlie;
+  height: $gigantic;
+  margin-bottom: $small;
+}
