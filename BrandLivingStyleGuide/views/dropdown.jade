@@ -1,0 +1,24 @@
+extends layout
+
+block content
+  div.wrapper-dropdown
+    span I'm kinda the label!
+    ul.dropdown
+      li I'm hidden!
+      li Me too!
+      li So do I.
+
+  div.wrapper-demo
+    div#dd.wrapper-dropdown-3(tabindex='1')
+      span Transport
+      ul.dropdown
+        li
+          a(href="#")
+            | Classic Mail
+        li
+          a(href="#")
+            | UPS Delivery
+        li
+          a(href="#")
+            | Private Jet
+

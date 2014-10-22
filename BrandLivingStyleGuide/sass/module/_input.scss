@@ -1,0 +1,30 @@
+fieldset {
+  display: block;
+}
+
+legend {
+  color: $color-grey;
+  font-family: $default;
+  font-size: $normal;
+  padding: $smaller 0;
+}
+
+input {
+  padding: $smaller;
+  width: 50%;
+  &:hover {
+    border: 2px solid $color-grey;
+  }
+  &:focus {
+    border: 2px solid $color-charlie;
+    outline: none;
+  }
+  &:required {
+      border: 2px solid $color-accent;
+  }
+}
+
+.invalid {
+  border: 2px solid $color-accent;
+}
+
