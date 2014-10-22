@@ -386,10 +386,17 @@ input {
   width: 50%; }
   /* line 15, /Users/Jeni/DevAcc/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/input */
   input:hover {
-    border: 2px solid #88A65E; }
+    border: 2px solid #5D5C5D; }
   /* line 18, /Users/Jeni/DevAcc/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/input */
   input:focus {
     border: 2px solid #BFB35A;
     outline: none; }
+  /* line 22, /Users/Jeni/DevAcc/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/input */
+  input:required {
+    border: 2px solid #8C2318; }
+
+/* line 27, /Users/Jeni/DevAcc/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/input */
+.invalid {
+  border: 2px solid #8C2318; }
 
 /*# sourceMappingURL=application.css.map */
