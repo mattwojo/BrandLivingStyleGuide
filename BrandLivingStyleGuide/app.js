@@ -34,6 +34,10 @@ app.get('/colorpalette', function(req,res) {
     res.render('colorpalette.jade', {title: 'colorpalette'});
 });
 
+app.get('/lists', function(req,res) {
+    res.render('lists.jade', {title: 'lists'});
+});
+
 app.use(favicon());
 app.use(logger('dev'));
 app.use(bodyParser.json());
