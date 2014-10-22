@@ -1,0 +1,36 @@
+%color {
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  padding-top: 2.5em;
+  // padding-left: 1.4em;
+  margin: .5em;
+  color: white;
+  text-align: center;
+}
+
+.alphaColor {
+  @extend %color;
+  background-color: $color-alpha;
+}
+
+.bravoColor {
+  @extend %color;
+  background-color: $color-bravo;
+}
+
+.charlieColor {
+  @extend %color;
+  background-color: $color-charlie;
+}
+
+.accentColor {
+  @extend %color;
+  background-color: $color-accent;
+}
+
+.greyColor {
+  @extend %color;
+  background-color: $color-grey;
+}
