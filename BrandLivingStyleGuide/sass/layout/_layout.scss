@@ -29,3 +29,10 @@ main {
   padding-top: 3rem;
 }
 
+.heading-break {
+  height: .1rem;
+  border-bottom: $color-alpha-light dotted 2px;
+  clear: both;
+  padding-top: 1.5rem;
+}
+
