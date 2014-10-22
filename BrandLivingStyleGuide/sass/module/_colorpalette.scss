@@ -1,11 +1,9 @@
 %color {
-  display: inline-block;
+  // display: inline-block;
   height: 100px;
   width: 100px;
-  border-radius: 50%;
+  // border-radius: 50%;
   padding-top: 2.5em;
-  // padding-left: 1.4em;
-  margin: .5em;
   color: white;
   text-align: center;
 }
@@ -15,9 +13,29 @@
   background-color: $color-alpha;
 }
 
+.alphaLight {
+  @extend %color;
+  background-color: $color-alpha-light;
+}
+
+.alphaDark {
+  @extend %color;
+  background-color: $color-alpha-dark;
+}
+
 .bravoColor {
   @extend %color;
   background-color: $color-bravo;
+}
+
+.bravoLight {
+  @extend %color;
+  background-color: $color-bravo-light;
+}
+
+.bravoDark {
+  @extend %color;
+  background-color: $color-bravo-dark;
 }
 
 .charlieColor {
@@ -25,12 +43,47 @@
   background-color: $color-charlie;
 }
 
+.charlieLight {
+  @extend %color;
+  background-color: $color-charlie-light;
+}
+
+.charlieDark {
+  @extend %color;
+  background-color: $color-charlie-dark;
+}
+
 .accentColor {
   @extend %color;
   background-color: $color-accent;
 }
 
+.accentLight {
+  @extend %color;
+  background-color: $color-accent-light;
+}
+
+.accentDark {
+  @extend %color;
+  background-color: $color-accent-dark;
+}
+
 .greyColor {
   @extend %color;
   background-color: $color-grey;
+}
+
+.greyLight {
+  @extend %color;
+  background-color: $color-grey-light;
+}
+
+.greyDark {
+  @extend %color;
+  background-color: $color-grey-dark;
+}
+
+.whiteBg {
+  @extend %color;
+  color: $color-alpha;
 }
