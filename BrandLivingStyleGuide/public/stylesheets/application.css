@@ -73,7 +73,8 @@ p {
 
 /* line 29, /home/bolle/Desktop/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/base/typography */
 .code {
-  font-size: 0.618rem; }
+  font-size: 1rem;
+  white-space: pre-wrap; }
 
 /* line 1, /home/bolle/Desktop/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/layout/nav */
 .nav-index {
@@ -130,13 +131,13 @@ main {
 
 /* line 11, /home/bolle/Desktop/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/layout/layout */
 .code-example {
-  width: 50%;
+  width: 48%;
   float: left;
   margin-top: 2rem; }
 
 /* line 17, /home/bolle/Desktop/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/layout/layout */
 .notes {
-  width: 50%;
+  width: 48%;
   float: right;
   margin-top: 2rem; }
 
@@ -187,67 +188,67 @@ main {
   color: white;
   text-align: center; }
 
-/* line 11, /home/bolle/Desktop/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/colorpalette */
+/* line 9, /home/bolle/Desktop/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/colorpalette */
 .alphaColor {
   background-color: #5E8C6A; }
 
-/* line 16, /home/bolle/Desktop/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/colorpalette */
+/* line 14, /home/bolle/Desktop/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/colorpalette */
 .alphaLight {
   background-color: #97b9a0; }
 
-/* line 21, /home/bolle/Desktop/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/colorpalette */
+/* line 19, /home/bolle/Desktop/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/colorpalette */
 .alphaDark {
   background-color: #354f3c; }
 
-/* line 26, /home/bolle/Desktop/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/colorpalette */
+/* line 24, /home/bolle/Desktop/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/colorpalette */
 .bravoColor {
   background-color: #88A65E; }
 
-/* line 31, /home/bolle/Desktop/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/colorpalette */
+/* line 29, /home/bolle/Desktop/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/colorpalette */
 .bravoLight {
   background-color: #b9caa0; }
 
-/* line 36, /home/bolle/Desktop/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/colorpalette */
+/* line 34, /home/bolle/Desktop/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/colorpalette */
 .bravoDark {
   background-color: #536638; }
 
-/* line 41, /home/bolle/Desktop/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/colorpalette */
+/* line 39, /home/bolle/Desktop/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/colorpalette */
 .charlieColor {
   background-color: #BFB35A; }
 
-/* line 46, /home/bolle/Desktop/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/colorpalette */
+/* line 44, /home/bolle/Desktop/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/colorpalette */
 .charlieLight {
   background-color: #dcd5a3; }
 
-/* line 51, /home/bolle/Desktop/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/colorpalette */
+/* line 49, /home/bolle/Desktop/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/colorpalette */
 .charlieDark {
   background-color: #817832; }
 
-/* line 56, /home/bolle/Desktop/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/colorpalette */
+/* line 54, /home/bolle/Desktop/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/colorpalette */
 .accentColor {
   background-color: #8C2318; }
 
-/* line 61, /home/bolle/Desktop/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/colorpalette */
+/* line 59, /home/bolle/Desktop/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/colorpalette */
 .accentLight {
   background-color: #db3f2f; }
 
-/* line 66, /home/bolle/Desktop/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/colorpalette */
+/* line 64, /home/bolle/Desktop/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/colorpalette */
 .accentDark {
   background-color: #350d09; }
 
-/* line 71, /home/bolle/Desktop/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/colorpalette */
+/* line 69, /home/bolle/Desktop/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/colorpalette */
 .greyColor {
   background-color: #5D5C5D; }
 
-/* line 76, /home/bolle/Desktop/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/colorpalette */
+/* line 74, /home/bolle/Desktop/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/colorpalette */
 .greyLight {
   background-color: #B7B7B7; }
 
-/* line 81, /home/bolle/Desktop/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/colorpalette */
+/* line 79, /home/bolle/Desktop/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/colorpalette */
 .greyDark {
   background-color: #373737; }
 
-/* line 86, /home/bolle/Desktop/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/colorpalette */
+/* line 84, /home/bolle/Desktop/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/colorpalette */
 .whiteBg {
   color: #5E8C6A; }
 

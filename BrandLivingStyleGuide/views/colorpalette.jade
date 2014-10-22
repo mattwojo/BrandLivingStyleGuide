@@ -1,7 +1,7 @@
 extends layout
 
 block content
-  h1= title
+  h1 Color Palette
   p The top row represents our brand's five core colors.
   p Each color below represents a -dark and -light variation that can also be used in our branding.
    ul
@@ -28,8 +28,8 @@ block content
   section
     article.code-example
       h3.code-title The Code
-      xmp.code <button class="primary-button"></button>
-      xmp.code <button class="secondary-button"></button>
+      xmp.code <li class="alphaColor div grid_2"> </li>
+      p "alphaColor" is the color class and "div grid_2" is for a six column grid section.
     aside.notes
       h3.notes-title Notes
-      p INSERT NOTES HERE
+      p Sass was used to create a color placeholder (%) which was extended into each of the color swatches. Each color swatch demonstrates a color defined in the core color palette and the two variations that can be used of that color. The color varaiable names (ie. $color-alpha) are defined in a config file that can easily be adjusted to change the core color palette throughout the entire site.
