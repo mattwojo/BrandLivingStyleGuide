@@ -617,4 +617,17 @@ input {
 .invalid {
   border: 2px solid #8C2318; }
 
+/* line 1, /Users/seangolob/Desktop/Living-Style-Guide/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/barcharts */
+.chart {
+  font: 0.7em;
+  font-weight: bold;
+  background-color: #88A65E;
+  text-align: right;
+  padding: 3px;
+  margin: 1px;
+  color: #BFB35A;
+  display: inline-block;
+  vertical-align: bottom;
+  width: 20%; }
+
 /*# sourceMappingURL=application.css.map */
