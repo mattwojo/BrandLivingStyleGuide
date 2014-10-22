@@ -369,4 +369,27 @@ html .clearfix, *:first-child + html .clearfix {
   height: 6.854rem;
   margin-bottom: 1rem; }
 
+/* line 1, /Users/Jeni/DevAcc/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/input */
+fieldset {
+  display: block; }
+
+/* line 5, /Users/Jeni/DevAcc/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/input */
+legend {
+  color: #5D5C5D;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.618rem;
+  padding: 0.618rem 0; }
+
+/* line 12, /Users/Jeni/DevAcc/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/input */
+input {
+  padding: 0.618rem;
+  width: 50%; }
+  /* line 15, /Users/Jeni/DevAcc/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/input */
+  input:hover {
+    border: 2px solid #88A65E; }
+  /* line 18, /Users/Jeni/DevAcc/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/input */
+  input:focus {
+    border: 2px solid #BFB35A;
+    outline: none; }
+
 /*# sourceMappingURL=application.css.map */

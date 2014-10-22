@@ -87,8 +87,3 @@ app.use(function(err, req, res, next) {
 
 
 module.exports = app;
-PEOPLE
-✛ Add
-ACTIVITY
-We haven't seen any activity yet. Configure your integrations →
-  Support
