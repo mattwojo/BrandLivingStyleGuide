@@ -47,178 +47,33 @@ table {
 h1 {
   color: #5E8C6A;
   font-family: 'Open Sans', sans-serif;
-  font-size: 4.236rem; }
+  font-size: 4.236rem;
+  line-height: 6.854rem; }
 
-/* line 7, /home/bolle/Desktop/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/base/typography */
+/* line 8, /home/bolle/Desktop/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/base/typography */
 h2 {
   color: #BFB35A;
   font-family: 'Open Sans', sans-serif;
-  font-size: 2.618rem; }
+  font-size: 2.618rem;
+  line-height: 4.236rem; }
 
-/* line 13, /home/bolle/Desktop/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/base/typography */
+/* line 15, /home/bolle/Desktop/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/base/typography */
 h3 {
   color: #dcd5a3;
   font-family: 'Open Sans', sans-serif;
-  font-size: 1.618rem; }
+  font-size: 1.618rem;
+  line-height: 2.618rem; }
 
-/* line 19, /home/bolle/Desktop/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/base/typography */
+/* line 22, /home/bolle/Desktop/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/base/typography */
 p {
   color: #5D5C5D;
   font-family: 'Open Sans', sans-serif;
-  font-size: 1rem; }
+  font-size: 1rem;
+  line-height: 1.618rem; }
 
-/* Mobile Grid Resets all Columns to 100%*/
-/* line 14, /home/bolle/Desktop/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/layout/grid */
-.grid_1 {
-  width: 100%;
-  margin: 0 1% 1% 1%;
-  float: left;
-  display: block; }
-  @media screen and (min-width:800px) {
-    .grid_1 {
-      width: 6.5%; } }
-
-/* line 14, /home/bolle/Desktop/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/layout/grid */
-.grid_2 {
-  width: 100%;
-  margin: 0 1% 1% 1%;
-  float: left;
-  display: block; }
-  @media screen and (min-width:800px) {
-    .grid_2 {
-      width: 15%; } }
-
-/* line 14, /home/bolle/Desktop/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/layout/grid */
-.grid_3 {
-  width: 100%;
-  margin: 0 1% 1% 1%;
-  float: left;
-  display: block; }
-  @media screen and (min-width:800px) {
-    .grid_3 {
-      width: 23.5%; } }
-
-/* line 14, /home/bolle/Desktop/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/layout/grid */
-.grid_4 {
-  width: 100%;
-  margin: 0 1% 1% 1%;
-  float: left;
-  display: block; }
-  @media screen and (min-width:800px) {
-    .grid_4 {
-      width: 32%; } }
-
-/* line 14, /home/bolle/Desktop/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/layout/grid */
-.grid_5 {
-  width: 100%;
-  margin: 0 1% 1% 1%;
-  float: left;
-  display: block; }
-  @media screen and (min-width:800px) {
-    .grid_5 {
-      width: 40.5%; } }
-
-/* line 14, /home/bolle/Desktop/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/layout/grid */
-.grid_6 {
-  width: 100%;
-  margin: 0 1% 1% 1%;
-  float: left;
-  display: block; }
-  @media screen and (min-width:800px) {
-    .grid_6 {
-      width: 49%; } }
-
-/* line 14, /home/bolle/Desktop/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/layout/grid */
-.grid_7 {
-  width: 100%;
-  margin: 0 1% 1% 1%;
-  float: left;
-  display: block; }
-  @media screen and (min-width:800px) {
-    .grid_7 {
-      width: 57.5%; } }
-
-/* line 14, /home/bolle/Desktop/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/layout/grid */
-.grid_8 {
-  width: 100%;
-  margin: 0 1% 1% 1%;
-  float: left;
-  display: block; }
-  @media screen and (min-width:800px) {
-    .grid_8 {
-      width: 66%; } }
-
-/* line 14, /home/bolle/Desktop/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/layout/grid */
-.grid_9, header {
-  width: 100%;
-  margin: 0 1% 1% 1%;
-  float: left;
-  display: block; }
-  @media screen and (min-width:800px) {
-    .grid_9, header {
-      width: 74.5%; } }
-
-/* line 14, /home/bolle/Desktop/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/layout/grid */
-.grid_10 {
-  width: 100%;
-  margin: 0 1% 1% 1%;
-  float: left;
-  display: block; }
-  @media screen and (min-width:800px) {
-    .grid_10 {
-      width: 83%; } }
-
-/* line 14, /home/bolle/Desktop/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/layout/grid */
-.grid_11 {
-  width: 100%;
-  margin: 0 1% 1% 1%;
-  float: left;
-  display: block; }
-  @media screen and (min-width:800px) {
-    .grid_11 {
-      width: 91.5%; } }
-
-/* line 14, /home/bolle/Desktop/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/layout/grid */
-.grid_12 {
-  width: 100%;
-  margin: 0 1% 1% 1%;
-  float: left;
-  display: block; }
-  @media screen and (min-width:800px) {
-    .grid_12 {
-      width: 100%; } }
-
-/* line 27, /home/bolle/Desktop/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/layout/grid */
-.far-left {
-  margin-left: 0px; }
-
-/* line 31, /home/bolle/Desktop/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/layout/grid */
-.far-right, header {
-  margin-right: 0px; }
-
-/* line 35, /home/bolle/Desktop/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/layout/grid */
-.clear, header {
-  clear: both;
-  display: block;
-  overflow: hidden;
-  visibility: hidden;
-  width: 0;
-  height: 0; }
-
-/* line 44, /home/bolle/Desktop/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/layout/grid */
-.clearfix:after {
-  clear: both;
-  content: ' ';
-  display: block;
-  font-size: 0;
-  line-height: 0;
-  visibility: hidden;
-  width: 0;
-  height: 0; }
-
-/* line 55, /home/bolle/Desktop/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/layout/grid */
-html .clearfix, *:first-child + html .clearfix {
-  zoom: 1; }
+/* line 29, /home/bolle/Desktop/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/base/typography */
+.code {
+  font-size: 0.618rem; }
 
 /* line 1, /home/bolle/Desktop/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/layout/nav */
 .nav-index {
@@ -263,6 +118,46 @@ header {
   height: 6.854rem;
   padding-top: 2.618rem; }
 
+/* line 1, /home/bolle/Desktop/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/layout/layout */
+ul {
+  list-style-type: none; }
+
+/* line 5, /home/bolle/Desktop/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/layout/layout */
+.nav-index {
+  position: fixed;
+  float: none;
+  background-color: #F2F2F2;
+  color: #F2F2F2;
+  height: 100%;
+  top: 0;
+  left: 0; }
+
+/* line 28, /home/bolle/Desktop/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/layout/layout */
+main {
+  padding: 0 1rem; }
+  /* line 30, /home/bolle/Desktop/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/layout/layout */
+  main h1 {
+    margin-bottom: 2rem; }
+  /* line 33, /home/bolle/Desktop/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/layout/layout */
+  main h2 {
+    margin-bottom: 1.5rem; }
+
+/* line 38, /home/bolle/Desktop/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/layout/layout */
+.code-example {
+  width: 50%;
+  float: left;
+  margin-top: 2rem; }
+
+/* line 44, /home/bolle/Desktop/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/layout/layout */
+.notes {
+  width: 50%;
+  float: right;
+  margin-top: 2rem; }
+
+/* line 50, /home/bolle/Desktop/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/layout/layout */
+.code-title, .notes-title {
+  margin-bottom: 2rem; }
+
 /* line 1, /home/bolle/Desktop/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/buttons */
 .primary-button {
   background-color: #354f3c;
@@ -293,5 +188,199 @@ header {
     background-color: #b9caa0;
     color: #373737;
     border: none; }
+
+/* line 32, /home/bolle/Desktop/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/buttons */
+.example-button-text {
+  margin-bottom: 2rem; }
+
+/* line 1, /home/bolle/Desktop/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/colorpalette */
+.alphaColor, .bravoColor, .charlieColor, .accentColor, .greyColor {
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  padding-top: 2.5em;
+  margin: 0.5em;
+  color: white;
+  text-align: center; }
+
+/* line 13, /home/bolle/Desktop/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/colorpalette */
+.alphaColor {
+  background-color: #5E8C6A; }
+
+/* line 18, /home/bolle/Desktop/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/colorpalette */
+.bravoColor {
+  background-color: #88A65E; }
+
+/* line 23, /home/bolle/Desktop/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/colorpalette */
+.charlieColor {
+  background-color: #BFB35A; }
+
+/* line 28, /home/bolle/Desktop/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/colorpalette */
+.accentColor {
+  background-color: #8C2318; }
+
+/* line 33, /home/bolle/Desktop/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/colorpalette */
+.greyColor {
+  background-color: #5D5C5D; }
+
+/* Mobile Grid Resets all Columns to 100%*/
+/* line 14, /home/bolle/Desktop/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/grid */
+.grid_1 {
+  width: 100%;
+  margin: 0 1% 1% 1%;
+  float: left;
+  display: block; }
+  @media screen and (min-width:800px) {
+    .grid_1 {
+      width: 6.5%; } }
+
+/* line 14, /home/bolle/Desktop/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/grid */
+.grid_2 {
+  width: 100%;
+  margin: 0 1% 1% 1%;
+  float: left;
+  display: block; }
+  @media screen and (min-width:800px) {
+    .grid_2 {
+      width: 15%; } }
+
+/* line 14, /home/bolle/Desktop/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/grid */
+.grid_3, .nav-index {
+  width: 100%;
+  margin: 0 1% 1% 1%;
+  float: left;
+  display: block; }
+  @media screen and (min-width:800px) {
+    .grid_3, .nav-index {
+      width: 23.5%; } }
+
+/* line 14, /home/bolle/Desktop/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/grid */
+.grid_4 {
+  width: 100%;
+  margin: 0 1% 1% 1%;
+  float: left;
+  display: block; }
+  @media screen and (min-width:800px) {
+    .grid_4 {
+      width: 32%; } }
+
+/* line 14, /home/bolle/Desktop/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/grid */
+.grid_5 {
+  width: 100%;
+  margin: 0 1% 1% 1%;
+  float: left;
+  display: block; }
+  @media screen and (min-width:800px) {
+    .grid_5 {
+      width: 40.5%; } }
+
+/* line 14, /home/bolle/Desktop/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/grid */
+.grid_6 {
+  width: 100%;
+  margin: 0 1% 1% 1%;
+  float: left;
+  display: block; }
+  @media screen and (min-width:800px) {
+    .grid_6 {
+      width: 49%; } }
+
+/* line 14, /home/bolle/Desktop/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/grid */
+.grid_7 {
+  width: 100%;
+  margin: 0 1% 1% 1%;
+  float: left;
+  display: block; }
+  @media screen and (min-width:800px) {
+    .grid_7 {
+      width: 57.5%; } }
+
+/* line 14, /home/bolle/Desktop/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/grid */
+.grid_8 {
+  width: 100%;
+  margin: 0 1% 1% 1%;
+  float: left;
+  display: block; }
+  @media screen and (min-width:800px) {
+    .grid_8 {
+      width: 66%; } }
+
+/* line 14, /home/bolle/Desktop/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/grid */
+.grid_9, header {
+  width: 100%;
+  margin: 0 1% 1% 1%;
+  float: left;
+  display: block; }
+  @media screen and (min-width:800px) {
+    .grid_9, header {
+      width: 74.5%; } }
+
+/* line 14, /home/bolle/Desktop/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/grid */
+.grid_10 {
+  width: 100%;
+  margin: 0 1% 1% 1%;
+  float: left;
+  display: block; }
+  @media screen and (min-width:800px) {
+    .grid_10 {
+      width: 83%; } }
+
+/* line 14, /home/bolle/Desktop/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/grid */
+.grid_11 {
+  width: 100%;
+  margin: 0 1% 1% 1%;
+  float: left;
+  display: block; }
+  @media screen and (min-width:800px) {
+    .grid_11 {
+      width: 91.5%; } }
+
+/* line 14, /home/bolle/Desktop/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/grid */
+.grid_12 {
+  width: 100%;
+  margin: 0 1% 1% 1%;
+  float: left;
+  display: block; }
+  @media screen and (min-width:800px) {
+    .grid_12 {
+      width: 100%; } }
+
+/* line 27, /home/bolle/Desktop/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/grid */
+.far-left {
+  margin-left: 0px; }
+
+/* line 31, /home/bolle/Desktop/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/grid */
+.far-right, header {
+  margin-right: 0px; }
+
+/* line 35, /home/bolle/Desktop/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/grid */
+.clear, header {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0; }
+
+/* line 44, /home/bolle/Desktop/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/grid */
+.clearfix:after {
+  clear: both;
+  content: ' ';
+  display: block;
+  font-size: 0;
+  line-height: 0;
+  visibility: hidden;
+  width: 0;
+  height: 0; }
+
+/* line 55, /home/bolle/Desktop/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/grid */
+html .clearfix, *:first-child + html .clearfix {
+  zoom: 1; }
+
+/* line 59, /home/bolle/Desktop/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/grid */
+.grid-display {
+  background-color: #BFB35A;
+  height: 6.854rem;
+  margin-bottom: 1rem; }
 
 /*# sourceMappingURL=application.css.map */

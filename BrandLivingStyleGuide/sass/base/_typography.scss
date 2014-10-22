@@ -2,23 +2,31 @@ h1 {
   color: $headingColor-1;
   font-family: $default;
   font-size: $huge;
+  line-height: $gigantic;
 }
 
 h2 {
   color: $headingColor-2;
   font-family: $default;
   font-size: $large;
+  line-height: $huge;
 }
 
 h3 {
   color: $headingColor-3;
   font-family: $default;
   font-size: $normal;
+  line-height: $large;
 }
 
 p {
   color: $paragraphColor;
   font-family: $default;
   font-size: $small;
+  line-height: $normal;
+}
+
+.code {
+  font-size: $smaller;
 }
 

@@ -201,7 +201,6 @@ html .clearfix, *:first-child + html .clearfix {
   top: 0;
   left: 0; }
 
-<<<<<<< HEAD
 main {
   padding: 2rem; }
   main h1 {
@@ -241,7 +240,7 @@ main {
     background-color: #b9caa0;
     color: #373737;
     border: none; }
-=======
+
 .nav-index_ul {
   width: 100%; }
 
