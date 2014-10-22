@@ -5,9 +5,6 @@ var favicon = require('static-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-var router = express.Router();
-
-var routes = require('./routes/index');
 
 var app = express();
 
@@ -15,7 +12,6 @@ var app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 
-app.get('/', routes.index);
 
 
 app.get('/', function(req,res) {
@@ -34,14 +30,17 @@ app.get('/colorpalette', function(req,res) {
     res.render('colorpalette.jade', {title: 'colorpalette'});
 });
 
+app.get('/dropdown', function(req,res) {
+    res.render('dropdown.jade', {title: 'dropdown'});
+});
+
 app.use(favicon());
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded());
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-app.use(app.router);
-app.use('/', routes);
+
 
 
 
