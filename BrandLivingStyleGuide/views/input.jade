@@ -1,0 +1,23 @@
+extends layout
+
+block content
+  article
+    h1 Inputs
+      h2 Text input
+      fieldset
+        legend Personal Information
+        input(type='text', placeholder='First name')
+      section
+        figure.code-example
+          h3.code-title Example
+          xmp.code <fieldset>
+            xmp.code <legend>Personal Information</legend>
+            xmp.code <input type="text" placeholder="First name">
+          xmp.code </fieldset>
+        aside.notes
+          h3.notes-title Notes
+          p
+            Text inputs are accompanied by a label and wrapped inside a fieldset. The :hover and :focus styles follow our brand colors.
+
+
+
