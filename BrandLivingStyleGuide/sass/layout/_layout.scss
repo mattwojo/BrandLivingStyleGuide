@@ -2,6 +2,7 @@ main {
   padding: 0 1rem;
   h1 {
     margin-bottom: 2rem;
+    clear: both;
   }
   h2 {
     margin-bottom: 1.5rem;
@@ -20,6 +21,11 @@ main {
   margin-top: 2rem;
 }
 
-.code-title, .notes-title {
+.code-title, .notes-title, .example-text {
   margin-bottom: 2rem;
 }
+
+.extra-heading {
+  padding-top: 3rem;
+}
+
