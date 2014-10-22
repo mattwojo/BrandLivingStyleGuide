@@ -3,6 +3,8 @@ html(lang="en")
   head
     title= pageTitle
     link(rel="stylesheet" href="stylesheets/application.css")
+    script(type='text/javascript', src='https://code.jquery.com/jquery-2.1.1.min.js')
+
   body
     nav.nav-index
       ul.nav-index_ul
@@ -18,6 +20,9 @@ html(lang="en")
         a.nav-index_link(href='/colorpalette')
           li.nav-index_li
             | Color Palette
+        a.nav-index_link(href='/dropdown')
+          li.nav-index_li
+            | Dropdown
         a.nav-index_link(href='/input')
           li.nav-index_li
             | Inputs
@@ -29,4 +34,7 @@ html(lang="en")
 
     footer
     //- End of view
-  script(type='text/javascript', src='app.js')
+  //- script(type='text/javascript', src='app.js')
+  script(type='text/javascript', src='javascripts/dropdown.js')
+
+
