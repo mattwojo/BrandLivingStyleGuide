@@ -1,0 +1,43 @@
+extends layout
+
+block content
+  article
+    h1 Inputs
+    section
+      h2 Text input
+      fieldset
+        legend Personal Information
+        input(type='text', placeholder='First name')
+    section
+      figure.code-example
+        h3.code-title Example
+        xmp.code <fieldset>
+          <legend>Personal Information</legend>
+          <label>First name</label>
+          <input type="text" placeholder="First name">
+        </fieldset>
+      aside.notes
+        h3.notes-title Notes
+        p Text inputs are accompanied by a label and wrapped inside a fieldset. The :hover and :focus styles follow our brand colors.
+    section
+      h2.extra-heading Validation Feedback
+      fieldset
+        legend Personal Information
+        input.invalid(type='text', placeholder='First name')
+    section
+      figure.code-example
+        h3.code-title Example
+        xmp.code <fieldset>
+          <legend>Personal Information</legend>
+          <label>First name</label>
+          <input type="text" placeholder="First name" class="invalid">
+        </fieldset>
+      aside.notes
+        h3.notes-title Notes
+        p Text inputs are accompanied by a label and wrapped inside a fieldset. The :hover and :focus styles follow our brand colors.
+
+
+
+
+
+
