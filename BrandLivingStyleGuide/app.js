@@ -32,6 +32,13 @@ app.get('/colorpalette', function(req,res) {
 
 app.get('/dropdown', function(req,res) {
     res.render('dropdown.jade', {title: 'dropdown'});
+
+app.get('/input', function(req,res) {
+    res.render('input.jade', {title: 'input'});
+});
+
+app.get('/lists', function(req,res) {
+    res.render('lists.jade', {title: 'lists'});
 });
 
 app.use(favicon());
