@@ -42,6 +42,10 @@ app.get('/lists', function(req,res) {
     res.render('lists.jade', {title: 'lists'});
 });
 
+app.get('/radio', function(req,res) {
+    res.render('radio.jade', {title: 'radio'});
+});
+
 app.use(favicon());
 app.use(logger('dev'));
 app.use(bodyParser.json());
