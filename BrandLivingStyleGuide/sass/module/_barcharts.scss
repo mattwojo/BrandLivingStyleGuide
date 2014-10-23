@@ -1,0 +1,19 @@
+.chart div {
+  font-size: $small;
+  font-weight: bold;
+  background-color: $color-bravo;
+  text-align: center;
+  padding: 3px;
+  margin: 6px;
+  border: 2px solid $color-grey;
+  border-top-left-radius:.8em;
+  border-top-right-radius:.8em;
+  color: white;
+  display: inline-block;
+  vertical-align: bottom;
+  width: 10%;
+}
+
+.chart form {
+  border: 6px solid $color-grey;
+}
