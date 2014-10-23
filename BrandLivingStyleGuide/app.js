@@ -12,8 +12,6 @@ var app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 
-
-
 app.get('/', function(req,res) {
     res.render('index.jade', {title: 'index'});
 });
@@ -53,7 +51,6 @@ app.get('/form', function(req,res) {
 app.get('/type', function(req,res) {
     res.render('type.jade', {title: 'type'});
 });
-
 
 app.use(favicon());
 app.use(logger('dev'));

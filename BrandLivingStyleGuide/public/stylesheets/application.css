@@ -77,6 +77,42 @@ p {
   line-height: 1rem;
   white-space: pre-wrap; }
 
+@media all and (max-width: 59em) and (min-width: 37.5em) {
+  /* line 36, /Users/seangolob/Desktop/Living-Style-Guide/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/base/typography */
+  h1 {
+    font-size: 2.618rem; }
+
+  /* line 39, /Users/seangolob/Desktop/Living-Style-Guide/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/base/typography */
+  h2 {
+    font-size: 1.618rem; }
+
+  /* line 42, /Users/seangolob/Desktop/Living-Style-Guide/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/base/typography */
+  h3 {
+    font-size: 1rem; }
+
+  /* line 45, /Users/seangolob/Desktop/Living-Style-Guide/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/base/typography */
+  p {
+    font-size: 0.618rem; }
+ }
+
+@media all and (max-width: 37em) and (min-width: 20em) {
+  /* line 51, /Users/seangolob/Desktop/Living-Style-Guide/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/base/typography */
+  h1 {
+    font-size: 1.618rem; }
+
+  /* line 54, /Users/seangolob/Desktop/Living-Style-Guide/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/base/typography */
+  h2 {
+    font-size: 1rem; }
+
+  /* line 57, /Users/seangolob/Desktop/Living-Style-Guide/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/base/typography */
+  h3 {
+    font-size: 0.618rem; }
+
+  /* line 60, /Users/seangolob/Desktop/Living-Style-Guide/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/base/typography */
+  p {
+    font-size: 0.381rem; }
+ }
+
 @media screen and (max-width:400px) {
   .isHidden, .nav-index {
     display: none; } }
