@@ -8,7 +8,7 @@ module.exports = function(grunt) {
         options: {
           sourceMap: true,
           includePaths: [
-            require('node-bourbon').includePaths,
+            //require('node-bourbon').includePaths,
             './bower_components/color-scale',
           ]
         }
