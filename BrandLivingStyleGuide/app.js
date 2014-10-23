@@ -58,6 +58,11 @@ app.get('/form', function(req,res) {
     res.render('form.jade', {title: 'form'});
 });
 
+app.get('/type', function(req,res) {
+    res.render('type.jade', {title: 'type'});
+});
+
+
 app.use(favicon());
 app.use(logger('dev'));
 app.use(bodyParser.json());
