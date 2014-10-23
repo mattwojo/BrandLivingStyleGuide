@@ -50,12 +50,10 @@ app.get('/barcharts', function(req,res) {
     res.render('barcharts.jade', {title: 'barcharts'});
 });
 
-<<<<<<< HEAD
 app.get('/navigation', function(req,res) {
     res.render('navigation.jade', {title: 'navigation'});
 });
 
-=======
 app.get('/radio', function(req,res) {
     res.render('radio.jade', {title: 'radio'});
 });
@@ -69,7 +67,6 @@ app.get('/type', function(req,res) {
 });
 
 
->>>>>>> 13d9997dda8fe2aad08dafbe12ecccb05af6c374
 app.use(favicon());
 app.use(logger('dev'));
 app.use(bodyParser.json());
