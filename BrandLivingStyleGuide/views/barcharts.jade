@@ -6,22 +6,18 @@ block content
     h2.example-text Example Savings Calculator
     form
       input(id='currentYear', type='text', placeholder='Current Year')
-      br
       input(id='currentSavings', type='text', placeholder='Current Savings')
-      br
       input(id='currentInterest', type='text', placeholder='Interest Rate Percentage')
-      br
       input(id='targetYear', type='text', placeholder='Target Year')
-      br
-      input(id='submit', type='submit', value='Submit')
-  figure
-    h2.example-text Bar Chart Styling
+      button.primary-button(id='submit', type='submit', value='Submit') Submit
+
+    h3.example-text Bar Chart Styling
     form.chart
-  section
-    article.code-example
-      h3.code-title The Code
-      xmp.code
-      xmp.code
-    aside.notes
-      h3.notes-title Notes
-      p INSERT NOTES HERE
+    section
+      article.grid_6.far-left
+        h3.example-text The Code
+        xmp.code
+        xmp.code
+      aside.grid_6.far-right
+        h3.example-text Notes
+        p INSERT NOTES HERE
