@@ -1,12 +1,6 @@
-hdoctype html
-html(lang="en")
-  head
-    title= pageTitle
-    link(rel="stylesheet" href="stylesheets/application.css")
-    script(type='text/javascript', src='https://code.jquery.com/jquery-2.1.1.min.js')
-    script(src='http://d3js.org/d3.v3.min.js')
+ extends layout
 
-  body
+block content
     nav.nav-index
       ul.nav-index_ul
         a.nav-index_link(href='/')
@@ -47,13 +41,3 @@ html(lang="en")
             | Typography
     main.content
       block content
-
-    header
-      h1 Sample Title
-
-    footer
-    //- End of view
-  //- script(type='text/javascript', src='app.js')
-  script(type='text/javascript', src='javascripts/dropdown.js')
-  script(type='text/javascript', src='javascripts/barcharts.js')
-
