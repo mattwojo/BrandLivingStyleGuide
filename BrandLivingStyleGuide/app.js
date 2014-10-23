@@ -12,14 +12,12 @@ var app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 
-
-
 app.get('/', function(req,res) {
     res.render('index.jade', {title: 'index'});
 });
 
-app.get('/buttons', function(req,res) {
-    res.render('buttons.jade', {title: 'buttons'});
+app.get('/formElements', function(req,res) {
+    res.render('formElements.jade', {title: 'formElements'});
 });
 
 app.get('/grid', function(req,res) {
@@ -28,14 +26,6 @@ app.get('/grid', function(req,res) {
 
 app.get('/colorpalette', function(req,res) {
     res.render('colorpalette.jade', {title: 'colorpalette'});
-});
-
-app.get('/dropdown', function(req,res) {
-    res.render('dropdown.jade', {title: 'dropdown'});
-});
-
-app.get('/input', function(req,res) {
-    res.render('input.jade', {title: 'input'});
 });
 
 app.get('/lists', function(req,res) {
@@ -50,8 +40,8 @@ app.get('/barcharts', function(req,res) {
     res.render('barcharts.jade', {title: 'barcharts'});
 });
 
-app.get('/radio', function(req,res) {
-    res.render('radio.jade', {title: 'radio'});
+app.get('/navigation', function(req,res) {
+    res.render('navigation.jade', {title: 'navigation'});
 });
 
 app.get('/form', function(req,res) {
@@ -61,7 +51,6 @@ app.get('/form', function(req,res) {
 app.get('/type', function(req,res) {
     res.render('type.jade', {title: 'type'});
 });
-
 
 app.use(favicon());
 app.use(logger('dev'));

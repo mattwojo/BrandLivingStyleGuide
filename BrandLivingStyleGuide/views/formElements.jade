@@ -30,6 +30,7 @@ block content
           h3.example-text Notes
           p.
             Add styles to your buttons by using the #[span.text-accent .primary-button ] or #[span.text-accent .secondary-button ] class!
+    div.heading-break
     article.grid_12#dropdown
       h2 Dropdown Menus
       h3.example-text
@@ -76,6 +77,7 @@ block content
           h3.example-text Notes
           p.
             Each dropdown requires a wrapper div with a #[span.text-accent #dd ]id and #[span.text-accent .wrapper-dropdown ] class. The dropdown itself is an ul with a #[span.text-accent .dropdown ] class. The functionality is build using jQuery.
+    div.heading-break
     article.grid_12#inputs
       h2 Input Fields
       fieldset
@@ -92,7 +94,8 @@ block content
             </fieldset>
         aside.grid_6.far-right
           h3.example-text Notes
-          p Text inputs are accompanied by a label and wrapped inside a fieldset. The :hover and :focus styles follow our brand colors.
+          p.
+            Text inputs are accompanied by a label and wrapped inside a fieldset. The #[span.text-accent :hover] and #[span.text-accent :focus] styles follow our brand colors.
         section.grid_12
           h2.extra-heading Validation Feedback
           fieldset
@@ -108,7 +111,8 @@ block content
               </fieldset>
           aside.grid_6.far-right
             h3.example-text Notes
-            p Text inputs are accompanied by a label and wrapped inside a fieldset. The :hover and :focus styles follow our brand colors.
+            p Text inputs are accompanied by a label and wrapped inside a fieldset. The #[span.text-accent :hover] and #[span.text-accent :focus] styles follow our brand colors.
+    div.heading-break
     article.grid_12#radio
       section.radio
         h2 Radio Buttons
@@ -118,7 +122,7 @@ block content
           input#radio-button2(type='radio', name='radio')
           label.radio-label(for='radio-button2') Choice B
       section
-        figure.code-example
+        figure.grid_6.far-left
           h3.example-text The Code
           xmp.code <fieldset>
             <legend>Radio buttons</legend>
@@ -127,10 +131,11 @@ block content
             <input id="radio-button2" type="radio" name="radio">
             <label class="radio-label" for "radio-button2">Choice B</label>
           </fieldset>
-        aside.notes
+        aside.grid_6.far-right
           h3.example-text Notes
           p.
             Custom styled radio buttons. To use, create an input radio button with a label that uses the #[span.text-accent .radio-label ] class.
+    div.heading-break
     article.grid_12#checkbox
       section.checkbox
         h2 Checkboxes
@@ -140,7 +145,7 @@ block content
           input#check2(type='checkbox', name='check' value='check2')
           label.checkbox-label.radio-label(for='check2') Choice B
       section
-        figure.code-example
+        figure.grid_6.far-left
           h3.example-text The Code
           xmp.code <fieldset>
             <legend>Checkboxes</legend>
@@ -149,7 +154,7 @@ block content
             <input id="check2" type="checkbox" name="radio">
             <label class="checkbox-label" for "check2">Choice B</label>
           </fieldset>
-        aside.notes
+        aside.grid_6.far-right
           h3.example-text Notes
           p.
             Custom styled checkboxes. To use, create an input checkbox with a label that combines the #[span.text-accent .radio-label ] and #[span.text-accent .checkbox-label ] classes.

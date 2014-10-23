@@ -1,27 +1,34 @@
 .tiny {
   font-size: $tiny;
+  line-height: $smaller;
 }
 
 .smaller {
   font-size: $smaller;
+  line-height: $small;
 }
 
 .small {
   font-size: $small;
+  line-height: $normal;
 }
 
 .normal {
   font-size: $normal;
+  line-height: $large;
 }
 
 .large {
   font-size: $large;
+  line-height: $huge;
 }
 
 .huge {
   font-size: $huge;
+  line-height: $gigantic;
 }
 
 .gigantic {
+  @include calc('line-height', $gigantic * 1.618);
   font-size: $gigantic;
 }
