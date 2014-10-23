@@ -369,38 +369,50 @@ html .clearfix, *:first-child + html .clearfix {
   height: 6.854rem;
   margin-bottom: 1rem; }
 
-/* line 1, /Users/Jeni/DevAcc/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/input */
-fieldset {
-  display: block; }
+/* line 1, /Users/Jeni/DevAcc/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/form */
+form {
+  background: #97b9a0;
+  border-radius: 0.381rem;
+  padding: 0.381rem 0.381rem;
+  width: 100%; }
 
-/* line 5, /Users/Jeni/DevAcc/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/input */
+/* line 8, /Users/Jeni/DevAcc/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/form */
+fieldset {
+  display: block;
+  border: none;
+  margin-bottom: 6.854rem; }
+  /* line 12, /Users/Jeni/DevAcc/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/form */
+  fieldset:last-of-type {
+    margin-bottom: 0; }
+
+/* line 17, /Users/Jeni/DevAcc/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/form */
 legend {
   color: #5D5C5D;
-  font-family: 'Open Sans', sans-serif;
   font-size: 1.618rem;
-  padding: 0.618rem 0; }
+  padding-left: 0.381rem; }
 
-/* line 12, /Users/Jeni/DevAcc/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/input */
+/* line 2, /Users/Jeni/DevAcc/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/input */
 input {
   padding: 0.618rem;
   width: 50%; }
-  /* line 15, /Users/Jeni/DevAcc/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/input */
+  /* line 5, /Users/Jeni/DevAcc/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/input */
   input:hover {
     border: 2px solid #5D5C5D; }
-  /* line 18, /Users/Jeni/DevAcc/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/input */
+  /* line 9, /Users/Jeni/DevAcc/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/input */
   input:focus {
     border: 2px solid #BFB35A;
     outline: none; }
-  /* line 22, /Users/Jeni/DevAcc/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/input */
+  /* line 13, /Users/Jeni/DevAcc/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/input */
   input:required {
     border: 2px solid #8C2318; }
 
-/* line 27, /Users/Jeni/DevAcc/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/input */
+/* line 18, /Users/Jeni/DevAcc/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/input */
 .invalid {
   border: 2px solid #8C2318; }
 
 /* line 1, /Users/Jeni/DevAcc/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/radio */
 label {
+  color: #5D5C5D;
   display: inline-block;
   cursor: pointer;
   position: relative;
@@ -409,11 +421,11 @@ label {
   margin-top: 1rem;
   font-size: 1rem; }
 
-/* line 12, /Users/Jeni/DevAcc/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/radio */
+/* line 13, /Users/Jeni/DevAcc/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/radio */
 input[type=radio], input[type=checkbox] {
   display: none; }
 
-/* line 16, /Users/Jeni/DevAcc/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/radio */
+/* line 17, /Users/Jeni/DevAcc/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/radio */
 label:before {
   content: "";
   display: inline-block;
@@ -426,19 +438,19 @@ label:before {
   background-color: #B7B7B7;
   box-shadow: inset 0px 2px 3px 0px rgba(93, 92, 93, 0.3), 0px 1px 0px 0px rgba(255, 255, 255, 0.8); }
 
-/* line 31, /Users/Jeni/DevAcc/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/radio */
+/* line 32, /Users/Jeni/DevAcc/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/radio */
 .radio label:before {
   border-radius: 0.618rem; }
 
-/* line 34, /Users/Jeni/DevAcc/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/radio */
+/* line 35, /Users/Jeni/DevAcc/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/radio */
 .checkbox label {
   margin-bottom: 0.618rem; }
 
-/* line 37, /Users/Jeni/DevAcc/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/radio */
+/* line 38, /Users/Jeni/DevAcc/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/radio */
 .checkbox label:before {
   border-radius: 3px; }
 
-/* line 41, /Users/Jeni/DevAcc/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/radio */
+/* line 42, /Users/Jeni/DevAcc/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/radio */
 input[type=radio]:checked + label:before {
   content: "\2022";
   color: #5E8C6A;
@@ -446,7 +458,7 @@ input[type=radio]:checked + label:before {
   text-align: center;
   line-height: 1rem; }
 
-/* line 49, /Users/Jeni/DevAcc/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/radio */
+/* line 50, /Users/Jeni/DevAcc/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/radio */
 input[type=checkbox]:checked + label:before {
   content: "\2713";
   text-shadow: 1px 1px 1px #B7B7B7;

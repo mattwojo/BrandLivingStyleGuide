@@ -46,6 +46,10 @@ app.get('/radio', function(req,res) {
     res.render('radio.jade', {title: 'radio'});
 });
 
+app.get('/form', function(req,res) {
+    res.render('form.jade', {title: 'form'});
+});
+
 app.use(favicon());
 app.use(logger('dev'));
 app.use(bodyParser.json());

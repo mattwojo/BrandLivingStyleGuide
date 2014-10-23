@@ -1,0 +1,22 @@
+form {
+  background: $color-alpha-light;
+  border-radius: $tiny;
+  padding: $tiny $tiny;
+  width: 100%;
+}
+
+fieldset {
+  display: block;
+  border: none;
+  margin-bottom: $gigantic;
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+legend {
+  color: $color-grey;
+  font-size: $normal;
+  padding-left: $tiny;
+}
+
