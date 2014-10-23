@@ -42,8 +42,19 @@ app.get('/lists', function(req,res) {
     res.render('lists.jade', {title: 'lists'});
 });
 
+app.get('/tables', function(req,res) {
+    res.render('tables.jade', {title: 'tables'});
+});
+
 app.get('/barcharts', function(req,res) {
     res.render('barcharts.jade', {title: 'barcharts'});
+
+app.get('/radio', function(req,res) {
+    res.render('radio.jade', {title: 'radio'});
+});
+
+app.get('/form', function(req,res) {
+    res.render('form.jade', {title: 'form'});
 });
 
 app.use(favicon());
@@ -52,8 +63,6 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded());
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-
-
 
 
 /// catch 404 and forwarding to error handler

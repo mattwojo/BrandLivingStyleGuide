@@ -8,33 +8,49 @@ block content
   h3 Size 1/1
 
   div.far-left.far-right.grid_12.grid-display
+    span .grid_12 .far-right .far-left
 
   h3 Size 1/2
 
   div.far-left.grid_6.grid-display
+    span .grid_6 .far-left
   div.far-right.grid_6.grid-display
+    span .grid_6 .far-right
 
   h3 Size 1/3
 
   div.far-left.grid_4.grid-display
+    span .grid_4 .far-left
   div.grid_4.grid-display
+    span .grid_4
   div.far-right.grid_4.grid-display
+    span .grid_4 .far-right
 
   h3 Size 1/4
 
   div.far-left.grid_3.grid-display
+    span .grid_3 .far-left
   div.grid_3.grid-display
+    span .grid_3
   div.grid_3.grid-display
+    span .grid_3
   div.far-right.grid_3.grid-display
+    span .grid_3 .far-right
 
   h3 Size 1/6
 
   div.far-left.grid_2.grid-display
+    span .grid_2 .far-left
   div.grid_2.grid-display
+    span .grid_2
   div.grid_2.grid-display
+    span .grid_2
   div.grid_2.grid-display
+    span .grid_2
   div.grid_2.grid-display
+    span .grid_2
   div.far-right.grid_2.grid-display
+    span .grid_2 .far-right
 
   h3 Size 1/12
 
@@ -56,26 +72,93 @@ block content
   h3 2/3
 
   div.far-left.grid_4.grid-display
+    span .grid_4 .far-left
   div.far-right.grid_8.grid-display
+    span .grid_8 .far-right
 
   div.far-left.grid_8.grid-display
+    span .grid_8 .far-left
   div.far-right.grid_4.grid-display
+    span .grid_4 .far-right
 
   h3 3/4
 
   div.far-left.grid_3.grid-display
+    span .grid_3 .far-left
   div.far-right.grid_9.grid-display
+    span .grid_9 .far-right
 
   div.far-left.grid_9.grid-display
+    span .grid_9 .far-left
   div.far-right.grid_3.grid-display
+    span .grid_3 .far-right
+
+  h3 Mixed
+
+  div.far-left.grid_2.grid-display
+    span .grid_2 .far-left
+  div.grid_6.grid-display
+    span .grid_6
+  div.far-right.grid_4.grid-display
+    span .grid_4 .far-right
+
   section
     article.code-example
       h3.code-title The Code
-      xmp.code <button class="primary-button"></button>
-      xmp.code <button class="secondary-button"></button>
+      xmp.code.
+        //Grid Column #
+        $cols : 12; //Sets # of columns
+
+        //Screen Sizes
+        $tablet: 'screen and (min-width:320px)';
+        $desktop : 'screen and (min-width:800px)';
+
+        @function findColumnWidth($cols) {
+          $result : ((100 - ( 2 * ($cols - 1))) / $cols);
+          @return $result;
+        }
+
+        $colWidth: findColumnWidth($cols);
+        $gutterWidth: 2%; //Sets width of each gutter
+
+        /* Mobile Grid Resets all Columns to 100%*/
+        @for $i from 1 through $cols {
+          .grid_#{$i} {
+            width: 100%;
+            margin: 0 1% 1% 1%;
+            float: left;
+            display: block;
+            //Sets grid widths at larger screen sizes
+            @include breakpoint(desktop) {
+              $gridWidth : ($i * $colWidth) + ($gutterWidth * ($i - 1)) ;
+              width: $gridWidth;
+            }
+          }
+        }
+
+        .far-left {
+          margin-left: 0px;
+        }
+
+        .far-right {
+          margin-right: 0px;
+        }
+
     aside.notes
       h3.notes-title Notes
-      p INSERT NOTES HERE
+      p.
+        The code sample shows the inner workings of our grid system, which is powered by Sass functions, mixins, and for loops. Using these equations, we can build a grid structure of any number of columns.
+      p.
+        To apply grid styling to an element, add whatever grid class you need for your layout. For example if you wanted an element to span three columns, you would add a class of #[span.text-accent .grid_3 ]. You would also add the #[span.text-accent .far-left ] or #[span.text-accent .far-right ] class if the element was furthest to the left or right, respectively.
+      p.
+        For example, if you wanted to create a two-column layout where the left column spans 4 columns and the right column spans 8 columns, you would class the left column with #[span.text-accent far-left ] and #[span.text-accent grid_4 ] and the right column with #[span.text-accent far-right ] and #[span.text-accent grid_8 ]. Example below :
+      xmp.
+        <div class="far-left grid_4">
+          Left Content
+        </div>
+        <div class="far-right grid_8">
+          Right Content
+        </div>
 
 
 
