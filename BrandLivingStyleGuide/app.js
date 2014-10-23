@@ -46,6 +46,10 @@ app.get('/tables', function(req,res) {
     res.render('tables.jade', {title: 'tables'});
 });
 
+app.get('/barcharts', function(req,res) {
+    res.render('barcharts.jade', {title: 'barcharts'});
+});
+
 app.use(favicon());
 app.use(logger('dev'));
 app.use(bodyParser.json());

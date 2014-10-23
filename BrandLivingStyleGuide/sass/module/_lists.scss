@@ -1,9 +1,19 @@
-.ordered-list{
+.ordered-list {
   list-style-type: decimal;
   list-style-position: inside;
   li {
     font-family: $default;
     font-size: $small;
-    margin-bottom: .1rem;
+    line-height: $normal;
+  }
+}
+
+.unordered-list {
+  list-style-type: circle;
+  list-style-position: inside;
+  li {
+    font-family: $default;
+    font-size: $small;
+    line-height: $normal;
   }
 }

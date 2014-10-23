@@ -4,6 +4,7 @@ html(lang="en")
     title= pageTitle
     link(rel="stylesheet" href="stylesheets/application.css")
     script(type='text/javascript', src='https://code.jquery.com/jquery-2.1.1.min.js')
+    script(src='http://d3js.org/d3.v3.min.js')
 
   body
     nav.nav-index
@@ -32,6 +33,10 @@ html(lang="en")
         a.nav-index_link(href='/tables')
           li.nav-index_li
             | Tables
+        a.nav-index_link(href='/barcharts')
+          li.nav-index_li
+            | Bar Charts
+
     main.content
       block content
 
@@ -42,5 +47,5 @@ html(lang="en")
     //- End of view
   //- script(type='text/javascript', src='app.js')
   script(type='text/javascript', src='javascripts/dropdown.js')
-
+  script(type='text/javascript', src='javascripts/barcharts.js')
 
