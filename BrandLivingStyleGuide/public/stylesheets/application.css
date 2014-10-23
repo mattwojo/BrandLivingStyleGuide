@@ -85,29 +85,39 @@ p {
   width: 24%;
   height: 100%;
   top: 0;
-  left: 0; }
+  left: 0;
+  overflow-y: scroll; }
+  @media screen and (max-width:400px) {
+    .nav-index {
+      width: 100%;
+      position: relative; } }
 
-/* line 11, /Users/seangolob/Desktop/Living-Style-Guide/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/layout/nav */
+/* line 16, /Users/seangolob/Desktop/Living-Style-Guide/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/layout/nav */
+#fixed-nav-button {
+  position: absolute;
+  z-index: 1; }
+
+/* line 21, /Users/seangolob/Desktop/Living-Style-Guide/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/layout/nav */
 .nav-index_ul {
   width: 100%; }
 
-/* line 15, /Users/seangolob/Desktop/Living-Style-Guide/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/layout/nav */
+/* line 25, /Users/seangolob/Desktop/Living-Style-Guide/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/layout/nav */
 .nav-index_li {
   display: block;
   width: 100%;
   font-family: 'Open Sans';
   padding: 1rem;
   border-top: 1px dotted #354f3c; }
-  /* line 21, /Users/seangolob/Desktop/Living-Style-Guide/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/layout/nav */
+  /* line 31, /Users/seangolob/Desktop/Living-Style-Guide/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/layout/nav */
   .nav-index_li:hover {
     background-color: #354f3c; }
 
-/* line 26, /Users/seangolob/Desktop/Living-Style-Guide/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/layout/nav */
+/* line 36, /Users/seangolob/Desktop/Living-Style-Guide/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/layout/nav */
 .nav-index_link {
   color: inherit;
   text-decoration: none; }
 
-/* line 31, /Users/seangolob/Desktop/Living-Style-Guide/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/layout/nav */
+/* line 41, /Users/seangolob/Desktop/Living-Style-Guide/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/layout/nav */
 .content {
   width: 76%;
   position: relative;

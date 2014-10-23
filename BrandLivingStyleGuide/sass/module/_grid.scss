@@ -16,7 +16,7 @@ $gutterWidth: 2%; //Sets width of each gutter
     float: left;
     display: block;
     //Sets grid widths at larger screen sizes
-    @include breakpoint(desktop) {
+    @include breakpoint(tablet) {
       $gridWidth : ($i * $colWidth) + ($gutterWidth * ($i - 1)) ;
       width: $gridWidth;
     }

@@ -6,6 +6,16 @@
   height: 100%;
   top: 0;
   left: 0;
+  overflow-y: scroll;
+  @include breakpoint(phone){
+    width: 100%;
+    position: relative;
+  }
+}
+
+#fixed-nav-button {
+  position: absolute;
+  z-index: 1;
 }
 
 .nav-index_ul {
