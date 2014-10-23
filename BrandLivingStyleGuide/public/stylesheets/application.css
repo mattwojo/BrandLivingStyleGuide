@@ -156,37 +156,38 @@ main {
   weight: bold; }
 
 /* line 1, /Users/margaretwalker/Desktop/CodeFellows-Gits/14-BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/buttons */
+.primary-button, .secondary-button {
+  color: #373737;
+  border-radius: 7px;
+  font-family: 'Open Sans', sans-serif;
+  padding: 0.5em 1.5em;
+  font-size: 1rem; }
+  /* line 7, /Users/margaretwalker/Desktop/CodeFellows-Gits/14-BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/buttons */
+  .primary-button:hover, .secondary-button:hover {
+    box-shadow: 1.5px 1.5px 0px #B7B7B7; }
+
+/* line 12, /Users/margaretwalker/Desktop/CodeFellows-Gits/14-BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/buttons */
 .primary-button {
-  background-color: #354f3c;
-  color: #F2F2F2;
-  border-radius: 1em;
-  font-family: 'Open Sans', sans-serif;
-  padding: 0.5em 1.5em;
-  font-size: 1rem;
-  margin: 0 1.5em 1em 1.5em;
-  border: none; }
-  /* line 10, /Users/margaretwalker/Desktop/CodeFellows-Gits/14-BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/buttons */
+  color: #354f3c;
+  background-color: #97b9a0;
+  border: 2px solid #354f3c;
+  margin: 0 1.5em 1em 1.5em; }
+  /* line 18, /Users/margaretwalker/Desktop/CodeFellows-Gits/14-BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/buttons */
   .primary-button:hover {
-    background-color: #97b9a0;
-    color: #373737;
-    border: none; }
+    background-color: #5E8C6A;
+    color: #213025; }
 
-/* line 17, /Users/margaretwalker/Desktop/CodeFellows-Gits/14-BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/buttons */
+/* line 24, /Users/margaretwalker/Desktop/CodeFellows-Gits/14-BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/buttons */
 .secondary-button {
-  background-color: #536638;
-  color: #F2F2F2;
-  border-radius: 1em;
-  font-family: 'Open Sans', sans-serif;
-  padding: 0.5em 1.5em;
-  font-size: 1rem;
-  border: none; }
-  /* line 25, /Users/margaretwalker/Desktop/CodeFellows-Gits/14-BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/buttons */
+  color: #536638;
+  background-color: #b9caa0;
+  border: 2px solid #536638; }
+  /* line 29, /Users/margaretwalker/Desktop/CodeFellows-Gits/14-BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/buttons */
   .secondary-button:hover {
-    background-color: #b9caa0;
-    color: #373737;
-    border: none; }
+    background-color: #88A65E;
+    color: #384526; }
 
-/* line 32, /Users/margaretwalker/Desktop/CodeFellows-Gits/14-BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/buttons */
+/* line 35, /Users/margaretwalker/Desktop/CodeFellows-Gits/14-BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/buttons */
 .example-text {
   margin-bottom: 2rem; }
 
