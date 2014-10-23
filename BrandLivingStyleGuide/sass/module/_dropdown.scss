@@ -1,6 +1,6 @@
 .dd-wrapper {
-    margin: 60px 0 0 0;
-    *zoom: 1;
+    margin-bottom: $small;
+    zoom: 1;
     font-weight: 400;
     &:after {
         clear: both;
@@ -10,13 +10,13 @@
 }
 
 .wrapper-dropdown {
-    /* Size and position */
+    // Size and position
     position: relative;
     width: 100%;
     margin: 0 auto;
     padding: $smaller;
 
-    /* Styles */
+    // Styles
     background: #fff;
     border-radius: 7px;
     border: 1px solid rgba($color-grey,0.15);
@@ -24,11 +24,11 @@
     cursor: pointer;
     outline: none;
 
-    /* Font settings */
+    // Font settings
     font-weight: bold;
     color: $color-charlie-dark;
     &:after {
-        //Styling for triangle
+        // Styling for triangle
         content: "";
         width: 0;
         height: 0;
@@ -44,13 +44,13 @@
 }
 
 .wrapper-dropdown .dropdown {
-  /* Size & position */
+    //Size & position
     position: absolute;
     top: 140%;
     left: 0;
     right: 0;
 
-    /* Styles */
+    //Styles
     background: white;
     border-radius: inherit;
     border: 1px solid rgba($color-grey-dark ,0.17);
@@ -58,7 +58,7 @@
     font-weight: normal;
     list-style: none;
 
-    /* Hiding */
+    //Hiding
     opacity: 0;
     pointer-events: none;
 }
@@ -115,14 +115,12 @@
     border-radius: 0 0 7px 7px;
 }
 
-/* Hover state */
-
+//Hover State
 .wrapper-dropdown .dropdown li:hover a {
     background: rgba($color-charlie, 0.2);
 }
 
-/* Active state */
-
+//Active State
 .wrapper-dropdown.active .dropdown {
     opacity: 1;
     pointer-events: auto;
