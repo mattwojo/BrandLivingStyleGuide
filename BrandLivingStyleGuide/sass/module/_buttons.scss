@@ -4,6 +4,7 @@
   font-family: $default;
   padding: .5em 1.5em;
   font-size: $small;
+  margin: 1.5em;
   &:hover {
     box-shadow: 1.5px 1.5px 0px $color-grey-light;
   }
@@ -14,7 +15,6 @@
   color: $color-alpha-dark;
   background-color: $color-alpha-light;
   border: 2px solid $color-alpha-dark;
-  margin: 0 1.5em 1em 1.5em;
   &:hover {
     background-color: $color-alpha;
     color: darken($color-alpha-dark, 10%);
