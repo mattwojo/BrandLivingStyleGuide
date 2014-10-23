@@ -1,5 +1,4 @@
 //Grid Setup
-
 //Sets width of each column
 @function findColumnWidth($cols) {
   $result : ((100 - ( 2 * ($cols - 1))) / $cols);
@@ -58,6 +57,10 @@ html .clearfix, *:first-child+html .clearfix {
 
 .grid-display {
   background-color: $color-charlie;
-  height: $gigantic;
+  height: $huge;
   margin-bottom: $small;
+  padding-top: $small;
+  text-align: center;
+  color: $color-charlie-dark;
+  line-height: $normal;
 }

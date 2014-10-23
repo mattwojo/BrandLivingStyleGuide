@@ -1,24 +1,50 @@
 extends layout
 
 block content
-  div.wrapper-dropdown
-    span I'm kinda the label!
-    ul.dropdown
-      li I'm hidden!
-      li Me too!
-      li So do I.
-
-  div.wrapper-demo
-    div#dd.wrapper-dropdown-3(tabindex='1')
-      span Transport
-      ul.dropdown
-        li
-          a(href="#")
-            | Classic Mail
-        li
-          a(href="#")
-            | UPS Delivery
-        li
-          a(href="#")
-            | Private Jet
+  main
+    h1 Dropdown Menus
+    h2.example-text
+    div.dd-wrapper
+      div#dd.wrapper-dropdown(tabindex='1')
+        span Sample Dropdown
+        ul.dropdown
+          li
+            a(href="#")
+              | Select Item 1
+          li
+            a(href="#")
+              | Select Item 2
+          li
+            a(href="#")
+              | Select Item 3
+    section
+      article.code-example
+        h3.code-title The Code
+        xmp.code.
+          <div id="dd" class="wrapper-dropdown" tabindex="1">
+            <span>
+              Sample Dropdown
+            </span>
+            <ul class="dropdown">
+              <li>
+                <a href="#">
+                  Select Item 1
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Select Item 2
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Select Item 3
+                </a>
+              </li>
+            </ul>
+          </div>
+      aside.notes
+        h3.notes-title Notes
+        p.
+          Each dropdown requires a wrapper div with a #[span.text-accent #dd ]id and #[span.text-accent .wrapper-dropdown ] class. The dropdown itself is an ul with a #[span.text-accent .dropdown ] class. The functionality is build using jQuery.
 
