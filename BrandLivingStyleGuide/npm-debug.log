@@ -1,4 +1,7 @@
 0 info it worked if it ends with ok
+1 verbose cli [ '/Users/margaretwalker/.node/bin/node',
+1 verbose cli   '/Users/margaretwalker/.node/bin/npm',
+1 verbose cli   'start' ]
 1 verbose cli [ 'node', '/usr/local/bin/npm', 'start' ]
 2 info using npm@1.4.28
 3 info using node@v0.10.32
@@ -18,6 +21,8 @@
 10 error     npm owner ls application-name
 10 error There is likely additional logging output above.
 11 error System Darwin 13.4.0
+12 error command "/Users/margaretwalker/.node/bin/node" "/Users/margaretwalker/.node/bin/npm" "start"
+13 error cwd /Users/margaretwalker/Desktop/CodeFellows-Gits/14-BrandLivingStyleGuide/BrandLivingStyleGuide
 12 error command "node" "/usr/local/bin/npm" "start"
 13 error cwd /Users/Jeni/DevAcc/BrandLivingStyleGuide/BrandLivingStyleGuide
 14 error node -v v0.10.32
