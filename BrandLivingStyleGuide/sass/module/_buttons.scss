@@ -4,7 +4,7 @@
   font-family: $default;
   padding: .5em 1.5em;
   font-size: $small;
-  margin: 1.5em;
+  margin: $tiny 0;
   &:hover {
     box-shadow: 1.5px 1.5px 0px $color-grey-light;
   }

@@ -2,6 +2,7 @@ table {
   width: 100%;
   border-collapse: collapse;
   border-spacing: 0;
+  margin-bottom: $normal;
 }
 table, tr, th, td {
   padding: $smaller;
@@ -23,11 +24,20 @@ th:only-child {
   border-radius: 7px 7px 0 0;
 }
 
-table:first-child, tr:first-child {
-  background-color: $color-alpha;
+.primary-table {
+  &:first-child, tr:first-child {
+    background-color: $color-alpha;
+  }
+  td {
+    box-shadow: inset 0px 0px 0px 1px $color-alpha;
+  }
 }
 
-td {
-  // border-radius: 7px;
-  border: 1px solid $color-alpha;
+.secondary-table {
+  &:first-child, tr:first-child {
+    background-color: $color-bravo;
+  }
+  td {
+    box-shadow: inset 0px 0px 0px 1px $color-bravo;
+  }
 }
