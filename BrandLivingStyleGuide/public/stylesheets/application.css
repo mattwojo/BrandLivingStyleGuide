@@ -77,7 +77,11 @@ p {
   line-height: 1rem;
   white-space: pre-wrap; }
 
-/* line 1, /Users/seangolob/Desktop/Living-Style-Guide/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/layout/nav */
+@media screen and (max-width:400px) {
+  .isHidden, .nav-index {
+    display: none; } }
+
+/* line 8, /Users/seangolob/Desktop/Living-Style-Guide/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/layout/nav */
 .nav-index {
   position: fixed;
   background-color: #5E8C6A;
@@ -92,38 +96,52 @@ p {
       width: 100%;
       position: relative; } }
 
-/* line 16, /Users/seangolob/Desktop/Living-Style-Guide/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/layout/nav */
-#fixed-nav-button {
-  position: absolute;
-  z-index: 1; }
+/* line 24, /Users/seangolob/Desktop/Living-Style-Guide/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/layout/nav */
+.showHidden {
+  display: block; }
 
-/* line 21, /Users/seangolob/Desktop/Living-Style-Guide/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/layout/nav */
+/* line 29, /Users/seangolob/Desktop/Living-Style-Guide/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/layout/nav */
+#fixed-nav-button {
+  display: none; }
+  @media screen and (max-width:400px) {
+    #fixed-nav-button {
+      display: block;
+      text-align: right;
+      position: absolute;
+      z-index: 1;
+      right: 2.618rem; } }
+
+/* line 41, /Users/seangolob/Desktop/Living-Style-Guide/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/layout/nav */
 .nav-index_ul {
   width: 100%; }
 
-/* line 25, /Users/seangolob/Desktop/Living-Style-Guide/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/layout/nav */
+/* line 45, /Users/seangolob/Desktop/Living-Style-Guide/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/layout/nav */
 .nav-index_li {
   display: block;
   width: 100%;
   font-family: 'Open Sans';
   padding: 1rem;
   border-top: 1px dotted #354f3c; }
-  /* line 31, /Users/seangolob/Desktop/Living-Style-Guide/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/layout/nav */
+  /* line 51, /Users/seangolob/Desktop/Living-Style-Guide/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/layout/nav */
   .nav-index_li:hover {
     background-color: #354f3c; }
 
-/* line 36, /Users/seangolob/Desktop/Living-Style-Guide/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/layout/nav */
+/* line 56, /Users/seangolob/Desktop/Living-Style-Guide/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/layout/nav */
 .nav-index_link {
   color: inherit;
   text-decoration: none; }
 
-/* line 41, /Users/seangolob/Desktop/Living-Style-Guide/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/layout/nav */
+/* line 61, /Users/seangolob/Desktop/Living-Style-Guide/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/layout/nav */
 .content {
   width: 76%;
   position: relative;
   padding: 4%;
   left: -webkit-calc(25% - 1em);
   left: calc(25% - 1em); }
+  @media screen and (max-width:400px) {
+    .content {
+      left: 0;
+      width: 100%; } }
 
 /* line 1, /Users/seangolob/Desktop/Living-Style-Guide/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/layout/header */
 header {
