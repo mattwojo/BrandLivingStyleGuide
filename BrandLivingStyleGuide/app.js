@@ -50,6 +50,10 @@ app.get('/barcharts', function(req,res) {
     res.render('barcharts.jade', {title: 'barcharts'});
 });
 
+app.get('/navigation', function(req,res) {
+    res.render('navigation.jade', {title: 'navigation'});
+});
+
 app.get('/radio', function(req,res) {
     res.render('radio.jade', {title: 'radio'});
 });

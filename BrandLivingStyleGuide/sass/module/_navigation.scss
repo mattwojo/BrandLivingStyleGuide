@@ -1,0 +1,41 @@
+%nav {
+  ul {
+    list-style-type: none;
+    margin: 0;
+    li {
+      a {
+        color: $color-grey;
+        text-decoration: none;
+        font-size: $normal;
+        &:hover {
+          color: $color-accent;
+        }
+      }
+    }
+  }
+}
+
+
+.nav-horizontal {
+  @extend %nav;
+  ul {
+    padding: .5rem 0;
+    border-top: dashed 1px $color-grey;
+    border-bottom: dashed 1px $color-grey;
+    li {
+      display: inline;
+      margin-right: 1rem;
+    }
+  }
+}
+
+
+.nav-vertical {
+  @extend %nav;
+  ul {
+    li {
+      border-bottom: dashed 1px $color-grey;
+      padding: .5rem 0;
+    }
+  }
+}

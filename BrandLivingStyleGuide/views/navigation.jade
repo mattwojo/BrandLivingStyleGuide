@@ -1,0 +1,51 @@
+extends layout
+
+block content
+  main
+    h1 Horizontal Navigation
+    h2.example-text Example
+    nav.nav-horizontal
+      ul
+        li
+          a(href="#") Home
+        li
+          a(href="#") Browse
+        li
+          a(href="#") Checkout
+    section
+      article.code-example
+        h3.code-title The Code
+        xmp.code <nav class="nav-vertical">
+        xmp.code   <ul>
+        xmp.code     <li>Navigation Item 1</li>
+        xmp.code     <li>Navigation Item 2</li>
+        xmp.code     <li>Navigation Item 3</li>
+        xmp.code   </ul>
+        xmp.code </nav>
+      aside.notes
+        h3.notes-title Notes
+        p The horizontal navigation bar uses a margin-right of 16px (the base font size of the browser). The font color of the list items is grey and has a hover color of red. Also, the top and bottom border of the navigation is dashed, 1px, and has a color of grey. Use nav-vert as the class to the nav tag.
+    div.heading-break
+    h1 Vertical Navigation
+    h2.example-text Example
+    nav.nav-vertical.grid_4.far-left
+      ul
+        li
+          a(href="#") Home
+        li
+          a(href="#") Browse
+        li
+          a(href="#") Checkout
+    section.grid_12
+      article.code-example
+        h3.code-title The Code
+        xmp.code <nav class="nav-horizontal">
+        xmp.code   <ul>
+        xmp.code     <li>Navigation Item 1</li>
+        xmp.code     <li>Navigation Item 2</li>
+        xmp.code     <li>Navigation Item 2</li>
+        xmp.code   </ul>
+        xmp.code </nav>
+      aside.notes
+        h3.notes-title Notes
+        p The vertical navigation bar uses a padding 8px (half of the base font size for the browser). The font color of the list items is grey and has a hover color of red. Also, the bottom border of each navigation item is dashed, 1px, and has a color of grey. Please note that the bottom border for each item spans 100% of the width of the parent container of the nav tag.
