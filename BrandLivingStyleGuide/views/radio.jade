@@ -2,24 +2,24 @@ extends layout
 
 block content
   article
-    h1 Radio & Checkboxes
+    h1 Radio &amp; Checkboxes
     section.radio
       h2 Radio
       fieldset
         legend Radio buttons
         input#radio-button1(type='radio', name='radio')
-        label(for='radio-button1') Choice A
+        label.radio-label(for='radio-button1') Choice A
         input#radio-button2(type='radio', name='radio')
-        label(for='radio-button2') Choice B
+        label.radio-label(for='radio-button2') Choice B
     section
       figure.code-example
         h3.code-title Example
         xmp.code <fieldset>
           <legend>Radio buttons</legend>
           <input id="radio-button1" type="radio" name="radio">
-          <label for "radio-button1">Choice A</label>
+          <label class="radio-label" for "radio-button1">Choice A</label>
           <input id="radio-button2" type="radio" name="radio">
-          <label for "radio-button2">Choice B</label>
+          <label class="radio-label" for "radio-button2">Choice B</label>
         </fieldset>
       aside.notes
         h3.notes-title Notes
@@ -29,18 +29,18 @@ block content
       h2.extra-heading Checkboxes
       fieldset
         input#check1(type='checkbox', name='check' value='check1')
-        label(for='check1') Choice A
+        label.checkbox-label.radio-label(for='check1') Choice A
         input#check2(type='checkbox', name='check' value='check2')
-        label(for='check2') Choice B
+        label.checkbox-label.radio-label(for='check2') Choice B
     section
       figure.code-example
         h3.code-title Example
         xmp.code <fieldset>
           <legend>Checkboxes</legend>
           <input id="check1" type="checkbox" name="" value="check1">
-          <label for "check1">Choice A</label>
+          <label class="checkbox-label" for "check1">Choice A</label>
           <input id="check2" type="checkbox" name="radio">
-          <label for "check2">Choice B</label>
+          <label class="checkbox-label" for "check2">Choice B</label>
         </fieldset>
       aside.notes
         h3.notes-title Notes

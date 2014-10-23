@@ -48,6 +48,7 @@ app.get('/tables', function(req,res) {
 
 app.get('/barcharts', function(req,res) {
     res.render('barcharts.jade', {title: 'barcharts'});
+});
 
 app.get('/radio', function(req,res) {
     res.render('radio.jade', {title: 'radio'});

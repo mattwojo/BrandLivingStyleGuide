@@ -1,7 +1,9 @@
 
 input {
   padding: $smaller;
-  width: 50%;
+  width: 100%;
+  font-size: $small;
+  margin-bottom: $small;
   &:hover {
     border: 2px solid $color-grey;
 
@@ -13,6 +15,12 @@ input {
   &:required {
       border: 2px solid $color-accent;
   }
+}
+.input-label {
+  color: $color-alpha-dark;
+  line-height: $normal;
+  width: 100%;
+  display: block;
 }
 
 .invalid {

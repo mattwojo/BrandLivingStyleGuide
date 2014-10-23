@@ -125,3 +125,9 @@
     opacity: 1;
     pointer-events: auto;
 }
+
+.dropdown-label {
+    @extend .input-label;
+    float: left;
+    width: 100%;
+}
