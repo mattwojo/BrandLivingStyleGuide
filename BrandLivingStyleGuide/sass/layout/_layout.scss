@@ -9,26 +9,6 @@ main {
   }
 }
 
-.code-example {
-  width: 48%;
-  float: left;
-  margin-top: 2rem;
-}
-
-.notes {
-  width: 48%;
-  float: right;
-  margin-top: 2rem;
-}
-
-.code-title, .notes-title, .example-text {
-  margin-bottom: 2rem;
-}
-
-.extra-heading {
-  padding-top: 3rem;
-}
-
 .text-accent {
   color: $color-accent-light;
   weight: bold;
@@ -41,7 +21,7 @@ main {
   padding-top: 1.5rem;
 }
 
-.inline {
-  display: inline;
-  margin-right: 1em;
+.example-text {
+  margin-bottom: $tiny;
 }
+

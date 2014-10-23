@@ -142,41 +142,20 @@ main {
     margin-bottom: 1.5rem; }
 
 /* line 12, /Users/seangolob/Desktop/Living-Style-Guide/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/layout/layout */
-.code-example {
-  width: 48%;
-  float: left;
-  margin-top: 2rem; }
-
-/* line 18, /Users/seangolob/Desktop/Living-Style-Guide/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/layout/layout */
-.notes {
-  width: 48%;
-  float: right;
-  margin-top: 2rem; }
-
-/* line 24, /Users/seangolob/Desktop/Living-Style-Guide/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/layout/layout */
-.code-title, .notes-title, .example-text {
-  margin-bottom: 2rem; }
-
-/* line 28, /Users/seangolob/Desktop/Living-Style-Guide/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/layout/layout */
-.extra-heading {
-  padding-top: 3rem; }
-
-/* line 32, /Users/seangolob/Desktop/Living-Style-Guide/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/layout/layout */
 .text-accent {
   color: #db3f2f;
   weight: bold; }
 
-/* line 37, /Users/seangolob/Desktop/Living-Style-Guide/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/layout/layout */
+/* line 17, /Users/seangolob/Desktop/Living-Style-Guide/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/layout/layout */
 .heading-break {
   height: 0.1rem;
   border-bottom: #97b9a0 dotted 2px;
   clear: both;
   padding-top: 1.5rem; }
 
-/* line 44, /Users/seangolob/Desktop/Living-Style-Guide/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/layout/layout */
-.inline {
-  display: inline;
-  margin-right: 1em; }
+/* line 24, /Users/seangolob/Desktop/Living-Style-Guide/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/layout/layout */
+.example-text {
+  margin-bottom: 0.381rem; }
 
 /* line 1, /Users/seangolob/Desktop/Living-Style-Guide/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/buttons */
 .primary-button, .secondary-button {
@@ -209,10 +188,6 @@ main {
   .secondary-button:hover {
     background-color: #88A65E;
     color: #384526; }
-
-/* line 35, /Users/seangolob/Desktop/Living-Style-Guide/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/buttons */
-.example-text {
-  margin-bottom: 2rem; }
 
 /* line 1, /Users/seangolob/Desktop/Living-Style-Guide/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/colorpalette */
 .alphaColor, .alphaLight, .alphaDark, .bravoColor, .bravoLight, .bravoDark, .charlieColor, .charlieLight, .charlieDark, .accentColor, .accentLight, .accentDark, .greyColor, .greyLight, .greyDark, .whiteBg {
@@ -717,7 +692,7 @@ th:only-child {
   .nav-horizontal ul li a, .nav-vertical ul li a {
     color: #5D5C5D;
     text-decoration: none;
-    font-size: 1.618rem; }
+    font-size: 1rem; }
     /* line 10, /Users/seangolob/Desktop/Living-Style-Guide/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/navigation */
     .nav-horizontal ul li a:hover, .nav-vertical ul li a:hover {
       color: #8C2318; }
@@ -792,30 +767,38 @@ input[type=checkbox]:checked + .checkbox-label:before {
 
 /* line 1, /Users/seangolob/Desktop/Living-Style-Guide/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/type */
 .tiny {
-  font-size: 0.381rem; }
+  font-size: 0.381rem;
+  line-height: 0.618rem; }
 
-/* line 5, /Users/seangolob/Desktop/Living-Style-Guide/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/type */
+/* line 6, /Users/seangolob/Desktop/Living-Style-Guide/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/type */
 .smaller {
-  font-size: 0.618rem; }
+  font-size: 0.618rem;
+  line-height: 1rem; }
 
-/* line 9, /Users/seangolob/Desktop/Living-Style-Guide/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/type */
+/* line 11, /Users/seangolob/Desktop/Living-Style-Guide/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/type */
 .small {
-  font-size: 1rem; }
+  font-size: 1rem;
+  line-height: 1.618rem; }
 
-/* line 13, /Users/seangolob/Desktop/Living-Style-Guide/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/type */
+/* line 16, /Users/seangolob/Desktop/Living-Style-Guide/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/type */
 .normal {
-  font-size: 1.618rem; }
-
-/* line 17, /Users/seangolob/Desktop/Living-Style-Guide/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/type */
-.large {
-  font-size: 2.618rem; }
+  font-size: 1.618rem;
+  line-height: 2.618rem; }
 
 /* line 21, /Users/seangolob/Desktop/Living-Style-Guide/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/type */
-.huge {
-  font-size: 4.236rem; }
+.large {
+  font-size: 2.618rem;
+  line-height: 4.236rem; }
 
-/* line 25, /Users/seangolob/Desktop/Living-Style-Guide/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/type */
+/* line 26, /Users/seangolob/Desktop/Living-Style-Guide/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/type */
+.huge {
+  font-size: 4.236rem;
+  line-height: 6.854rem; }
+
+/* line 31, /Users/seangolob/Desktop/Living-Style-Guide/BrandLivingStyleGuide/BrandLivingStyleGuide/sass/module/type */
 .gigantic {
+  line-height: -webkit-calc(11.08977rem);
+  line-height: calc(11.08977rem);
   font-size: 6.854rem; }
 
 /*# sourceMappingURL=application.css.map */
