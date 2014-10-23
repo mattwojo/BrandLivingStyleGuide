@@ -1,0 +1,117 @@
+extends layout
+
+block content
+  article
+    h1 Form Sample
+    section
+      form.grid_12.far-left.far-right
+        fieldset
+          legend Sign Up for a New Payment Account
+          aside.aside-form-signup.grid_4.far-left
+            p.
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.
+          div.grid_8.far-right
+            label.input-label Name
+            input(type='text', placeholder='Name')
+            label.input-label Email
+            input(type='email', placeholder='ex: example@example.com')
+            label.input-label Username
+            input(type='text', placeholder='Username')
+            label.input-label Password
+            input(type='password', placeholder='Password')
+            ul.unordered-list
+              li Must have 8 characters
+              li Must include one uppercase character
+              li Must include one number
+
+            legend Payment Details
+            label.input-label Name
+            input(type='text', placeholder='As it appears on your card')
+            label.input-label Card type
+            input#radio-button1(type='radio', name='radio')
+            label.radio-label(for='radio-button1') Visa
+            input#radio-button2(type='radio', name='radio')
+            label.radio-label(for='radio-button2') Mastercard
+            input#radio-button3(type='radio', name='radio')
+            label.radio-label(for='radio-button3') American Express
+            label.input-label Card Number
+            input(type='number', placeholder='')
+            label.input-label Security Code
+            input(type='number', placeholder='')
+            label.dropdown-label Expiration Date
+            div.dd-wrapper.grid_6.far-left
+              div#dd.wrapper-dropdown(tabindex='1')
+                span Month
+                ul.dropdown
+                  li
+                    a(href="#")
+                      | January
+                  li
+                    a(href="#")
+                      | February
+                  li
+                    a(href="#")
+                      | March
+                  li
+                    a(href="#")
+                      | April
+                  li
+                    a(href="#")
+                      | May
+                  li
+                    a(href="#")
+                      | June
+                  li
+                    a(href="#")
+                      | July
+                  li
+                    a(href="#")
+                      | August
+                  li
+                    a(href="#")
+                      | September
+                  li
+                    a(href="#")
+                      | October
+                  li
+                    a(href="#")
+                      | November
+                  li
+                    a(href="#")
+                      | December
+            div.dd-wrapper.grid_6.far-right
+              div#dd.wrapper-dropdown(tabindex='1')
+                span Year
+                ul.dropdown
+                  li
+                    a(href="#")
+                      | 2014
+                  li
+                    a(href="#")
+                      | 2015
+                  li
+                    a(href="#")
+                      | 2016
+                  li
+                    a(href="#")
+                      | 2017
+                  li
+                    a(href="#")
+                      | 2018
+                  li
+                    a(href="#")
+                      | 2019
+                  li
+                    a(href="#")
+                      | 2020
+                  li
+                    a(href="#")
+                      | 2021
+            button.secondary-button(type='submit') Submit
+
+
+
+
+
+
+

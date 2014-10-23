@@ -42,22 +42,40 @@ app.get('/lists', function(req,res) {
     res.render('lists.jade', {title: 'lists'});
 });
 
+app.get('/tables', function(req,res) {
+    res.render('tables.jade', {title: 'tables'});
+});
+
 app.get('/barcharts', function(req,res) {
     res.render('barcharts.jade', {title: 'barcharts'});
 });
 
+<<<<<<< HEAD
 app.get('/navigation', function(req,res) {
     res.render('navigation.jade', {title: 'navigation'});
 });
 
+=======
+app.get('/radio', function(req,res) {
+    res.render('radio.jade', {title: 'radio'});
+});
+
+app.get('/form', function(req,res) {
+    res.render('form.jade', {title: 'form'});
+});
+
+app.get('/type', function(req,res) {
+    res.render('type.jade', {title: 'type'});
+});
+
+
+>>>>>>> 13d9997dda8fe2aad08dafbe12ecccb05af6c374
 app.use(favicon());
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded());
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-
-
 
 
 /// catch 404 and forwarding to error handler

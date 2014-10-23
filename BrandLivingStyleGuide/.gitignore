@@ -10,10 +10,11 @@ Thumbs.db
 
 # Generated CSS output
 #######################
-public/stylesheets/*.css
-public/stylesheets/*.css.map
+public/stylesheets/application.css
+public/stylesheets/application.css.map
 
 # Package dependencies
 ######################
 node_modules/
 bower_components
+

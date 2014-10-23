@@ -7,9 +7,9 @@ function Person (currentYear, currentSavings, currentInterest, targetYear){
   this.yearsLeft = function(){
     return this.targetYear - this.currentYear;
   };
-  this.moneyAttargetYear = function(){
+  this.money = function(){
     if (this.yearsLeft() <= 0){
-      alert('You are retired!');
+      alert('Current Year must be before Target Year!');
     }
     else {
       for (i = 0; i < this.yearsLeft(); i++){
@@ -27,11 +27,10 @@ document.getElementById('submit').onclick = function() {
   var currentInterest = parseInt(document.getElementById('currentInterest').value);
   var targetYear = parseInt(document.getElementById('targetYear').value);
   var test = new Person(currentYear, currentSavings, currentInterest, targetYear);
-  var data = test.moneyAttargetYear();
-  alert("ALERT!");
+  var data = test.money();
   var x = d3.scale.linear() //function that maps values to pixel measurements
   .domain([0, d3.max(data)])
-  .range([0, 420]);
+  .range([0, 200]);
 
   d3.select(".chart")
   .selectAll("div")
