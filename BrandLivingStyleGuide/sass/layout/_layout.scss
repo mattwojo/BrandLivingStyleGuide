@@ -29,6 +29,11 @@ main {
   padding-top: 3rem;
 }
 
+.text-accent {
+  color: $color-accent-light;
+  weight: bold;
+}
+
 .heading-break {
   height: .1rem;
   border-bottom: $color-alpha-light dotted 2px;
