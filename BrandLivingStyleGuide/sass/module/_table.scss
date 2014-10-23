@@ -1,0 +1,33 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+table, tr, th, td {
+  padding: $smaller;
+}
+
+th {
+  color: $color-grey-lightest;
+}
+
+th:first-child {
+  border-radius: 7px 0 0 0;
+}
+
+th:last-child {
+  border-radius: 0 7px 0 0;
+}
+
+th:only-child {
+  border-radius: 7px 7px 0 0;
+}
+
+table:first-child, tr:first-child {
+  background-color: $color-alpha;
+}
+
+td {
+  // border-radius: 7px;
+  border: 1px solid $color-alpha;
+}
