@@ -1,12 +1,11 @@
-label {
+.radio-label {
   color: $color-grey;
   display: inline-block;
   cursor: pointer;
   position: relative;
   padding-left: $normal;
-  margin-right: $small;
-  margin-top: $small;
   font-size: $small;
+  margin: $small $small $normal 0;
 }
 
 input[type=radio],
@@ -14,7 +13,7 @@ input[type=checkbox] {
   display: none;
 }
 
-label:before {
+.radio-label:before {
   content: "";
   display: inline-block;
 
@@ -27,19 +26,17 @@ label:before {
   bottom: 1px;
   background-color: $color-grey-light;
   box-shadow: inset 0px 2px 3px 0px rgba(93, 92, 93, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);
-}
-
-.radio label:before {
   border-radius: $smaller;
 }
-.checkbox label {
+
+.checkbox-label {
   margin-bottom: $smaller;
 }
-.checkbox label:before {
+.checkbox-label:before {
     border-radius: 3px;
 }
 
-input[type=radio]:checked + label:before {
+input[type=radio]:checked + .radio-label:before {
     content: "\2022";
     color: $color-alpha;
     font-size: $normal;
@@ -47,7 +44,7 @@ input[type=radio]:checked + label:before {
     line-height: $small;
 }
 
-input[type=checkbox]:checked + label:before {
+input[type=checkbox]:checked + .checkbox-label:before {
   content: "\2713";
   text-shadow: 1px 1px 1px $color-grey-light;
   font-size: $small;

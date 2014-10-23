@@ -1,8 +1,9 @@
 form {
   background: $color-alpha-light;
   border-radius: $tiny;
-  padding: $tiny $tiny;
+  padding: $normal $normal;
   width: 100%;
+  color: $color-alpha-dark;
 }
 
 fieldset {
@@ -15,8 +16,14 @@ fieldset {
 }
 
 legend {
-  color: $color-grey;
   font-size: $normal;
-  padding-left: $tiny;
+  line-height: $large;
+  color: inherit;
 }
 
+form .unordered-list {
+  color: inherit;
+}
+.aside-form-signup {
+  padding:$normal $normal 0 0;
+}
