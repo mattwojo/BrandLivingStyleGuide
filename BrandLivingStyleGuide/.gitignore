@@ -10,6 +10,7 @@ Thumbs.db
 
 # Generated CSS output
 #######################
+public/stylesheets/*.css
 public/stylesheets/application.css
 public/stylesheets/application.css.map
 
