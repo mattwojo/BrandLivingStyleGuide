@@ -4,7 +4,7 @@
 3 info using node@v0.10.32
 4 verbose node symlink /usr/bin/node
 5 error Failed to parse json
-5 error Unexpected string
+5 error Unexpected token }
 6 error File: /home/bolle/Desktop/BrandLivingStyleGuide/package.json
 7 error Failed to parse package.json data.
 7 error package.json must be actual JSON, not just JavaScript.
