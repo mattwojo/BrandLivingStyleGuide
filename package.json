@@ -1,4 +1,3 @@
-
 {
   "name": "application-name",
   "version": "0.0.1",
@@ -8,6 +7,7 @@
   },
   "dependencies": {
     "body-parser": "~1.0.0",
+    "bower": "^1.3.12",
     "cookie-parser": "~1.0.1",
     "debug": "~0.7.4",
     "express": "~3.4.8",
@@ -17,6 +17,11 @@
     "jade": "~1.3.0",
     "morgan": "~1.0.0",
     "static-favicon": "~1.0.0"
+  },
+  "main": "app.js",
+  "engines": {
+    "node": "0.10.26",
+    "npm": "1.4.3"
   },
   "devDependencies": {
     "grunt-contrib-watch": "^0.6.1",

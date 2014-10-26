@@ -192,7 +192,7 @@ main {
   font-family: 'Open Sans', sans-serif;
   padding: 0.5em 1.5em;
   font-size: 1rem;
-  margin: 0.381rem 0; }
+  margin: 1.618rem 0; }
   /* line 8, /home/bolle/Desktop/BrandLivingStyleGuide/sass/module/buttons */
   .primary-button:hover, .secondary-button:hover {
     box-shadow: 1.5px 1.5px 0px #B7B7B7; }
