@@ -59,8 +59,8 @@ $gigantic: 6.854rem;
 $cols : 12; //Sets # of columns
 
 //Screen Sizes
-$tablet: 'screen and (min-width:320px)';
-$desktop : 'screen and (min-width:800px)';
+$phone: 'screen and (max-width:400px)';
+$tablet: 'screen and (min-width:800px)';
 
 
 

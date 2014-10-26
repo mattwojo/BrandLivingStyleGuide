@@ -1,3 +1,10 @@
+.isHidden {
+  @include breakpoint(phone){
+    display: none;
+  }
+
+}
+
 .nav-index {
   position: fixed;
   background-color: $navBGColor;
@@ -6,6 +13,29 @@
   height: 100%;
   top: 0;
   left: 0;
+  overflow-y: scroll;
+  @extend .isHidden;
+  @include breakpoint(phone){
+    width: 100%;
+    position: relative;
+  }
+}
+
+.showHidden {
+  display: block;
+}
+
+
+#fixed-nav-button {
+  display: none;
+  @include breakpoint(phone){
+    display: block;
+    text-align: right;
+    position: absolute;
+    z-index: 1;
+    right: $large;
+  }
+
 }
 
 .nav-index_ul {
@@ -32,5 +62,9 @@
   width: 76%;
   position: relative;
   padding: 4%;
-  @include calc(left, "25% - 1em")
+  @include calc(left, "25% - 1em");
+  @include breakpoint(phone){
+    left: 0;
+    width: 100%;
+  }
 }

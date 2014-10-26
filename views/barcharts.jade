@@ -1,0 +1,96 @@
+extends layout
+
+block content
+  main
+    h1 Bar Charts
+    h2.example-text Example Savings Calculator
+    form
+      input(id='currentYear', type='text', placeholder='Current Year')
+      input(id='currentSavings', type='text', placeholder='Current Savings')
+      input(id='currentInterest', type='text', placeholder='Interest Rate Percentage')
+      input(id='targetYear', type='text', placeholder='Target Year')
+      button.primary-button(id='submit', type='submit', value='Submit') Submit
+
+    h3.example-text Bar Chart Styling
+    form.chart
+    section
+      article.grid_6.far-left
+        h3.example-text The Code
+        p A SIMPLE CALCULATOR WITH JAVASCRIPT
+        xmp.code.
+          function Person (currentYear, currentSavings, currentInterest, targetYear){
+          this.currentYear = currentYear;
+          this.currentSavings = currentSavings;
+          this.currentInterest = currentInterest;
+          this.targetYear = targetYear;
+          this.array = [];
+          this.yearsLeft = function(){
+            return this.targetYear - this.currentYear;
+          };
+          this.money = function(){
+            if (this.yearsLeft() <= 0){
+              alert('Current Year must be before Target Year!');
+            }
+            else {
+              for (i = 0; i < this.yearsLeft(); i++){
+                this.currentSavings += this.currentSavings * this.currentInterest/100;
+                this.array[i] = this.currentSavings.toFixed(2);
+              }
+              return this.array;
+              }
+            };
+          }
+        p GRAPHING AN ARRAY WITH D3
+        xmp.code.
+          document.getElementById('submit')
+            .onclick = function() {
+            var currentYear = parseInt(document.getElementById
+              ('currentYear').value);
+            var currentSavings = parseInt(document.getElementById
+              ('currentSavings').value);
+            var currentInterest = parseInt(document.getElementById
+              ('currentInterest').value);
+            var targetYear = parseInt(document.getElementById
+              ('targetYear').value);
+            var test = new Person(currentYear, currentSavings,
+              currentInterest, targetYear);
+            var data = test.money();
+            var x = d3.scale.linear()
+            .domain([0, d3.max(data)])
+            .range([0, 200]);
+
+            d3.select(".chart")
+            .selectAll("div")
+            .data(data)
+            .enter().append("div")
+            .style("height", function(d)
+              { return x(d) + "px"; })
+            .text(function(d) { return d; });
+            return false;
+          };
+
+      aside.grid_6.far-right
+        h3.example-text Notes
+        p This SIMPLE SAVINGS CALCULATOR provides a modular framework for collecting user information, applying some simple calculations (in this case an interest rate), and outputting the results into a numerical array.
+        p ---
+        p INCLUDING THE D3 LIBRARY (http://d3js.org/d3.v3.min.js) allows this code, upon clicking the submit button, to scale the calculated array using 'd3.scale.linear()'. The domain of the bar chart is established by the maximum number in the data array and a range is chosen to determine how large the bars should appear. In this style, the bars are kept fairly small as to more easily be included as a modular element. The style applies a vertical bar chart, though can easily be changed to horizontal by applying width rather than height.
+        p ---
+        p CSS STYLING has a few important considerations when interacting with D3 scaling. In this module, each bar in the graph is a simple DIV element with the "chart" class applied. A vertical bar graph requires "display: inline-block" with "vertical-align: bottom" applied (the default for inline-block is for the bars to scale downward).
+        xmp.code.
+          .chart div {
+            font-size: $small;
+            font-weight: bold;
+            background-color: $color-bravo;
+            box-shadow: 5px 0 0px 0
+            rgba(255,255,255,.6) inset;
+            text-align: center;
+            padding: 3px;
+            margin: 6px;
+            border: 2px solid $color-grey;
+            border-top-left-radius:.8em;
+            border-top-right-radius:.8em;
+            color: white;
+            display: inline-block;
+            vertical-align: bottom;
+            width: 10%;
+          }

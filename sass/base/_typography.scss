@@ -32,32 +32,11 @@ p {
   white-space: pre-wrap;
 }
 
-@media all and (max-width: 59em) and (min-width: 37.5em) {
-    h1{
-        font-size: $large;
-    }
-    h2 {
-        font-size: $normal;
-    }
-    h3 {
-        font-size: $small;
-    }
-    p {
-        font-size: $smaller;
-    }
-}
-
-@media all and (max-width: 37em) and (min-width: 20em) {
-    h1{
-        font-size: $normal;
-    }
-    h2 {
-        font-size: $small;
-    }
-    h3 {
-        font-size: $smaller;
-    }
-    p {
-        font-size: $tiny;
-    }
+@include breakpoint(phone){
+  h1{
+      font-size: $large;
+  }
+  h2 {
+      font-size: $normal;
+  }
 }
