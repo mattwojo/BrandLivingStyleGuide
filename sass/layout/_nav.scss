@@ -61,7 +61,7 @@
 .content {
   width: 76%;
   position: relative;
-  padding: 4%;
+  padding: 1% 4%;
   @include calc(left, "25% - 1em");
   @include breakpoint(phone){
     left: 0;

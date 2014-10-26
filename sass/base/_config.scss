@@ -47,13 +47,31 @@ $default: 'Open Sans', sans-serif;
 
 
 //Golden Ratio Variables
-$tiny: 0.381rem;
-$smaller: 0.618rem;
-$small: 1rem;
-$normal: 1.618rem;
-$large: 2.618rem;
-$huge: 4.236rem;
-$gigantic: 6.854rem;
+// $tiny: 0.381rem;
+// $smaller: 0.618rem;
+// $small: 1rem;
+// $normal: 1.618rem;
+// $large: 2.618rem;
+// $huge: 4.236rem;
+// $gigantic: 6.854rem;
+
+//Perfect Fifth Variables
+$tiny: 0.444em;
+$smaller: 0.667em;
+$small: 1em;
+$normal: 1.5em;
+$large: 2.25em;
+$huge: 3.375em;
+$gigantic: 5.063em;
+
+//Perfect Fourth Variables
+// $tiny: .563em;
+// $smaller:.75em;
+// $small: 1em;
+// $normal: 1.333em;
+// $large: 1.777em;
+// $huge: 2.369em;
+// $gigantic: 3.157em;
 
 //Grid Column #
 $cols : 12; //Sets # of columns
