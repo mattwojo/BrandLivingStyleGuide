@@ -29,3 +29,7 @@ The Living Style Guide Team:
 * Matt Wojciakowski
 
 Please feel welcome to use or contribute to this library... it is a work in progress!
+
+To install, run, and contribute: 1) Clone and run 'npm install' and 'bower install' 2) Run 'grunt' 3) Navigate to localhost:3000 
+
+Or, visit our app on heroku at: http://livingstyleguide.herokuapp.com/
