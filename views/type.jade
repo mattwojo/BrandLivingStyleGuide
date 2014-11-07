@@ -3,31 +3,69 @@ extends layout
 block content
   main
     h1 Typography
-    section.grid_12
-        h2 Fonts
-            p Primary Font: 'Open Sans', 'sans-serif';
-                a(href="#" id="section-headers")
-    div.heading-break
-    section.grid_12
+    nav.nav-horizontal
+      ul
+        li
+          a(href="#headings") Headings
+        li
+          a(href="#fonts") Fonts
+        li
+          a(href="#sizes") Font Sizes
+        li
+          a(href="#sections") Paragraph Sections
+    section.grid_12#headings
         h1 h1 Titles
         h2 h2 Subtitles
         h3 h3 Section Titles
         p p Paragraph Text
     div.heading-break
-    section.grid_12
+    section.grid_12#fonts
+        h2 Fonts
+            p Primary Font: 'Open Sans', 'sans-serif';
+                a(href="#" id="section-headers")
+            p Secondary Font: 'Open Sans', 'sans-serif';
+                a(href="#" id="section-headers")
+    div.heading-break
+    section.grid_6.far-left#sizes
         h2 Font Sizes
-        h3 (based on the Golden Ratio)
-            h4.gigantic.isHidden 6.854rem;
+            h4.gigantic Gigantic
+            p (5.063em)
             p
-            h4.huge.isHidden 4.236rem;
+            h4.huge Huge
+            p (3.375em)
             p
-            h4.large 2.618rem;
+            h4.large Large
+            p (2.25em)
             p
-            h4.normal Normal (1.618rem)
+            h4.normal Normal
+            p (1.5em)
             p
-            h4.small Small (1rem)
+            h4.small Small
+            p.small (1em)
             p
-            h4.smaller Smaller (0.618rem)
+            h4.smaller Smaller
+            p.smaller (0.667em)
             p
-            h4.tiny Tiny (0.381rem)
-        section.grid_6.far-right
+            h4.tiny Tiny
+            p.tiny (0.444em)
+    section.far-right.grid_6
+          h3.notes-title Notes
+          p Font sizes are based on the <a href="http://www.hyperarts.com/blog/how-to-use-a-modular-scale/"> Perfect Fifth</a> aspect ratio (2:3) for <a href="http://modularscale.com/"> modular scale </a> and typographic rhythm. This takes away the need to come up with arbitrary size values for type and design elements.
+          p Canadian typographer Robert Bringhurst, says: #[span.text-accent "A modular scale, like a musical scale, is a prearranged set of harmonious proportions."]
+    section.far-right.grid_6
+          h3.code-title The Code
+          p The font sizes are configured as variable names and associated classes. This makes it very simple to update sizes and have it reflected everywhere throughout the site.
+          xmp.code.small .gigantic {font-size: $gigantic;}
+          xmp.code.small .huge {font-size: $huge;}
+          xmp.code.small .large {font-size: $large;}
+          xmp.code.small .normal {font-size: $normal;}
+          xmp.code.small .smaller {font-size: $smaller;}
+          xmp.code.small .tiny {font-size: $tiny;}
+    section.grid_12#sections
+        h2 Paragraph 2-Column Sub-Sections
+            article.grid_6.far-left
+                h3 Paragraph Subtitle
+                p This is an example 2-column paragraph. Mustache Austin trust fund, freegan cliche authentic Tumblr Portland Kickstarter Neutra heirloom keffiyeh photo booth twee.  Typewriter crucifix iPhone, tousled health goth art party organic try-hard fap roof party 3 wolf moon Thundercats gluten-free scenester narwhal.  IPhone Schlitz Truffaut brunch, artisan forage fanny pack.  Cardigan pickled tousled keytar.  Vice 90's post-ironic, deep v wolf Kickstarter irony Echo Park messenger bag.  Vinyl flexitarian cray tote bag gastropub, Banksy bicycle rights church-key typewriter PBR.  Umami quinoa try-hard chillwave beard.
+            article.grid_6.far-right
+                h3 Paragraph Subtitle
+                p This is an example 2-column paragraph. Try-hard bicycle rights whatever.  Quinoa craft beer tote bag tattooed fingerstache hoodie.  Aesthetic Vice heirloom, occupy lo-fi pork belly Pinterest tattooed Bushwick quinoa retro whatever raw denim.  Artisan Wes Anderson Cosby sweater fashion axe pickled.  Slow-carb Williamsburg meh meggings Thundercats, mumblecore fixie cliche. Next level aesthetic McSweeney's health goth pour-over literally cred. Before they sold out biodiesel bespoke Cosby sweater crucifix.  Umami Schlitz flexitarian try-hard readymade, Blue Bottle tattooed keytar Banksy.  Cardigan trust fund sustainable asymmetrical.  Semiotics cold-pressed Cosby sweater, plaid flannel chambray iPhone.  Seitan normcore chambray flexitarian, Etsy swag tilde wayfarers American Apparel you probably haven't heard of them.  Blog Portland semiotics, viral meditation drinking vinegar normcore 8-bit.
