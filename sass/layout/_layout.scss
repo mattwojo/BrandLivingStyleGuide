@@ -25,3 +25,26 @@ main {
   margin-bottom: $small;
 }
 
+.article-blog {
+  text-align: justify;
+  margin-right: 3em;
+  color: $color-bravo;
+  background-color: $color-grey-lightest;
+}
+h3.article-blog {
+  font-weight: normal;
+  color: $color-charlie-dark;
+  background-color: transparent;
+}
+li.article-blog {
+  padding: .5em;
+}
+
+p.article-blog:first-letter {
+  float: left;
+  font-size: 3em;
+  line-height: 1em;
+  padding: 0px 3px;
+  font-weight: 900;
+  color: $color-charlie-light;
+}
