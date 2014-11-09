@@ -1,4 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Pacifico);
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -179,6 +180,32 @@ main {
 /* line 24, /home/bolle/Desktop/BrandLivingStyleGuide/sass/layout/layout */
 .example-text {
   margin-bottom: 1em; }
+
+/* line 28, /home/bolle/Desktop/BrandLivingStyleGuide/sass/layout/layout */
+.article-blog {
+  text-align: justify;
+  margin-right: 3em;
+  color: #88A65E;
+  background-color: #F2F2F2; }
+
+/* line 34, /home/bolle/Desktop/BrandLivingStyleGuide/sass/layout/layout */
+h3.article-blog {
+  font-weight: normal;
+  color: #817832;
+  background-color: transparent; }
+
+/* line 39, /home/bolle/Desktop/BrandLivingStyleGuide/sass/layout/layout */
+li.article-blog {
+  padding: 0.5em; }
+
+/* line 43, /home/bolle/Desktop/BrandLivingStyleGuide/sass/layout/layout */
+p.article-blog:first-letter {
+  float: left;
+  font-size: 3em;
+  line-height: 1em;
+  padding: 0px 3px;
+  font-weight: 900;
+  color: #dcd5a3; }
 
 /* line 1, /home/bolle/Desktop/BrandLivingStyleGuide/sass/module/buttons */
 .primary-button, .secondary-button {
@@ -789,30 +816,34 @@ input[type=checkbox]:checked + .checkbox-label:before {
   line-height: 1em; }
 
 /* line 1, /home/bolle/Desktop/BrandLivingStyleGuide/sass/module/type */
+.titlefont {
+  font-family: 'Pacifico', cursive; }
+
+/* line 5, /home/bolle/Desktop/BrandLivingStyleGuide/sass/module/type */
 .tiny {
   font-size: 0.444em; }
 
-/* line 5, /home/bolle/Desktop/BrandLivingStyleGuide/sass/module/type */
+/* line 9, /home/bolle/Desktop/BrandLivingStyleGuide/sass/module/type */
 .smaller {
   font-size: 0.667em; }
 
-/* line 9, /home/bolle/Desktop/BrandLivingStyleGuide/sass/module/type */
+/* line 13, /home/bolle/Desktop/BrandLivingStyleGuide/sass/module/type */
 .small {
   font-size: 1em; }
 
-/* line 13, /home/bolle/Desktop/BrandLivingStyleGuide/sass/module/type */
+/* line 17, /home/bolle/Desktop/BrandLivingStyleGuide/sass/module/type */
 .normal {
   font-size: 1.5em; }
 
-/* line 17, /home/bolle/Desktop/BrandLivingStyleGuide/sass/module/type */
+/* line 21, /home/bolle/Desktop/BrandLivingStyleGuide/sass/module/type */
 .large {
   font-size: 2.25em; }
 
-/* line 21, /home/bolle/Desktop/BrandLivingStyleGuide/sass/module/type */
+/* line 25, /home/bolle/Desktop/BrandLivingStyleGuide/sass/module/type */
 .huge {
   font-size: 3.375em; }
 
-/* line 25, /home/bolle/Desktop/BrandLivingStyleGuide/sass/module/type */
+/* line 29, /home/bolle/Desktop/BrandLivingStyleGuide/sass/module/type */
 .gigantic {
   font-size: 5.063em; }
 

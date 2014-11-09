@@ -44,7 +44,8 @@ $linkHover-dark: $color-accent-dark;
 //Base Typography
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
 $default: 'Open Sans', sans-serif;
-
+@import url(http://fonts.googleapis.com/css?family=Pacifico);
+$titlefont: 'Pacifico', cursive;
 
 //Golden Ratio Variables
 // $tiny: 0.381rem;

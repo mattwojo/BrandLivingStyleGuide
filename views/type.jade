@@ -12,20 +12,33 @@ block content
         li
           a(href="#sizes") Font Sizes
         li
-          a(href="#sections") Paragraph Sections
-    section.grid_12#headings
+          a(href="#articles") Blog Articles
+    section.far-left.grid_6#headings
         h1 h1 Titles
         h2 h2 Subtitles
         h3 h3 Section Titles
         p p Paragraph Text
+    section.far-right.grid_6
+        h3.notes-title Notes
+        p Headings are elements that describe the content that follows and also define a document’s structure. Headings should briefly describe what the page or sections are about, making it clear to the reader (human or non-human) what to expect in the following body. There are few instances in which headings should go below h3 level. Headings both help to gain accurate semantic meaning and SEO results. Check heading and html structural semantics using <a href="https://gsnedders.html5.org/outliner/">HTML Outliner.</a>
+
     div.heading-break
-    section.grid_12#fonts
+    section.far-left.grid_6#fonts
         h2 Fonts
-            p Primary Font: 'Open Sans', 'sans-serif';
-                a(href="#" id="section-headers")
-            p Secondary Font: 'Open Sans', 'sans-serif';
-                a(href="#" id="section-headers")
-    div.heading-break
+        p Primary Font: 'Open Sans', 'sans-serif';
+                a(href="#" id="fonts")
+        p Blog Article Titles: <span class="titlefont">'Pacifico', 'cursive';</span>
+                a(href="#" id="fonts")
+        h3.code-title The Code
+        p Fonts are hotlinked directly to the Google Font API, increasing performance by eliminating font loading.The fonts are configured as variable names making font changes throughout the site a simple change to one variable name.
+        xmp.code.smaller @import url(http://fonts.googleapis.com/css?family=Open+Sans);
+        xmp.code.smaller $default: 'Open Sans', sans-serif;
+        xmp.code.smaller $titlefont: 'Pacifico', cursive;
+        xmp.code.smaller .titlefont {font-family: $titlefont;}
+    section.far-right.grid_6
+          h3.notes-title Notes
+          p While embedded fonts are slowly becoming a de facto standard in Web design, they also introduce overhead in performance because they have to be loaded. <a href="http://css-tricks.com/preventing-the-performance-hit-from-custom-fonts/">Chris Coyier</a> recently discussed the idea of loading Web fonts only on large screens to avoid the performance hit. Web fonts could also be loaded into AppCache or LocalStorage first and shown on subsequent page loads. <a href="https://developers.google.com/fonts/docs/webfont_loader">Google’s WebFont Loader</a> can also help to ensure that the content is displayed in fallback fonts even before the Web fonts have loaded.
+        div.heading-break
     section.grid_6.far-left#sizes
         h2 Font Sizes
             h4.gigantic Gigantic
@@ -46,8 +59,6 @@ block content
             h4.smaller Smaller
             p.smaller (0.667em)
             p
-            h4.tiny Tiny
-            p.tiny (0.444em)
     section.far-right.grid_6
           h3.notes-title Notes
           p Font sizes are based on the <a href="http://www.hyperarts.com/blog/how-to-use-a-modular-scale/"> Perfect Fifth</a> aspect ratio (2:3) for <a href="http://modularscale.com/"> modular scale </a> and typographic rhythm. This takes away the need to come up with arbitrary size values for type and design elements.
@@ -60,12 +71,16 @@ block content
           xmp.code.small .large {font-size: $large;}
           xmp.code.small .normal {font-size: $normal;}
           xmp.code.small .smaller {font-size: $smaller;}
-          xmp.code.small .tiny {font-size: $tiny;}
-    section.grid_12#sections
-        h2 Paragraph 2-Column Sub-Sections
-            article.grid_6.far-left
-                h3 Paragraph Subtitle
-                p This is an example 2-column paragraph. Mustache Austin trust fund, freegan cliche authentic Tumblr Portland Kickstarter Neutra heirloom keffiyeh photo booth twee.  Typewriter crucifix iPhone, tousled health goth art party organic try-hard fap roof party 3 wolf moon Thundercats gluten-free scenester narwhal.  IPhone Schlitz Truffaut brunch, artisan forage fanny pack.  Cardigan pickled tousled keytar.  Vice 90's post-ironic, deep v wolf Kickstarter irony Echo Park messenger bag.  Vinyl flexitarian cray tote bag gastropub, Banksy bicycle rights church-key typewriter PBR.  Umami quinoa try-hard chillwave beard.
-            article.grid_6.far-right
-                h3 Paragraph Subtitle
-                p This is an example 2-column paragraph. Try-hard bicycle rights whatever.  Quinoa craft beer tote bag tattooed fingerstache hoodie.  Aesthetic Vice heirloom, occupy lo-fi pork belly Pinterest tattooed Bushwick quinoa retro whatever raw denim.  Artisan Wes Anderson Cosby sweater fashion axe pickled.  Slow-carb Williamsburg meh meggings Thundercats, mumblecore fixie cliche. Next level aesthetic McSweeney's health goth pour-over literally cred. Before they sold out biodiesel bespoke Cosby sweater crucifix.  Umami Schlitz flexitarian try-hard readymade, Blue Bottle tattooed keytar Banksy.  Cardigan trust fund sustainable asymmetrical.  Semiotics cold-pressed Cosby sweater, plaid flannel chambray iPhone.  Seitan normcore chambray flexitarian, Etsy swag tilde wayfarers American Apparel you probably haven't heard of them.  Blog Portland semiotics, viral meditation drinking vinegar normcore 8-bit.
+    section.grid_12#articles
+        h2 Two-Column Blog Articles
+        article.grid_6.far-left
+            h3.article-blog.titlefont Paragraph Subtitle
+            p.article-blog In web design every typographic decision needs to simultaneously accomplish a variety of results. Each headline you create should be set in text that is legible and search engine friendly, while the typeface should fit within the guidelines of the company’s brand.
+            p.article-blog Furthermore, typography should fit to the graphic style of the site and meet user expectations of being able to copy and paste text. It is our responsibility, as designers, to embrace the rules which are born of a craft which goes back hundreds of years. Space plays the most important part in maintaining flow of your design. Good use of space will tell the reader where to start, when to pause, where it ends, and what to do next.
+        article.grid_6.far-right
+            h3.article-blog.titlefont Paragraph Subtitle
+            p.article-blog The Measure, in typography, is the name given to the width of a body of type. There are several units of measurement used for defining the Measure’s width. The three basic units are:
+                li.article-blog One point = 1/72 of an inch
+                li.article-blog One pica = 12 points
+                li.article-blog One em = The distance horizontally equal to the type size, in points, you are using. Eg. 1em of 12pt type is 12pt.
+            p.article-blog There is an optimum width for a Measure and that is defined by the amount of characters are in the line. A general good rule of thumb is 2-3 alphabets in length, or 52-78 characters (including spaces). This is for legibility purposes. Keep your Measure within these guidelines and you should have no problem with legibility.
