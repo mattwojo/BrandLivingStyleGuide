@@ -71,6 +71,7 @@ block content
           xmp.code.small .large {font-size: $large;}
           xmp.code.small .normal {font-size: $normal;}
           xmp.code.small .smaller {font-size: $smaller;}
+    div.heading-break
     section.grid_12#articles
         h2 Two-Column Blog Articles
         article.grid_6.far-left
@@ -84,3 +85,17 @@ block content
                 li.article-blog One pica = 12 points
                 li.article-blog One em = The distance horizontally equal to the type size, in points, you are using. Eg. 1em of 12pt type is 12pt.
             p.article-blog There is an optimum width for a Measure and that is defined by the amount of characters are in the line. A general good rule of thumb is 2-3 alphabets in length, or 52-78 characters (including spaces). This is for legibility purposes. Keep your Measure within these guidelines and you should have no problem with legibility.
+    section.grid_6.far-left
+        h3.notes-title Notes
+        p The practice of using Drop Caps, a large letter to mark the start of a text, has been around for almost two thousand years. Used for centuries in religious and scholarly texts, initial caps are associated with and communicate an “old” or “traditional” feeling. Thus, when a page design needs to feel traditional, elegant, or historic, drop caps are a good solution.
+    section.far-right.grid_6
+          h3.code-title The Code
+          p The CSS3 way to implement dropcaps is to target the first character of the first paragraph using pseudo class selectors. No extra markup needed, but no IE < 9 support.
+          xmp.code.small p.article-blog:first-letter {
+          xmp.code.small  float: left;
+          xmp.code.small  font-size: 3em;
+          xmp.code.small  line-height: 1em;
+          xmp.code.small  padding: 0px 3px;
+          xmp.code.small  font-weight: 900;
+          xmp.code.small  color: $color-charlie-light;
+          xmp.code.small }
