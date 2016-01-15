@@ -1,4 +1,4 @@
-The live site is hosted on Heroku: [http://BrandLivingStyleGuide.herokuapp.com](http://brandlivingstyleguide.herokuapp.com/)
+The live site is hosted on Heroku: [http://brandlivingstyleguide.herokuapp.com](http://brandlivingstyleguide.herokuapp.com/)
 
 Brand Living Style Guide: What is it?
 ======================================
