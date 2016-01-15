@@ -111,46 +111,71 @@ block content
         aside.grid_6.far-right
           h3.example-text Notes
           p.
-            Text inputs are accompanied by a label and wrapped inside a fieldset. The #[span.text-accent :hover] and #[span.text-accent :focus] styles follow our brand colors.
+            The HTML &lt;fieldset&gt; element is used to group controls and labels (&lt;label&gt;) within a web form, also benefiting from global attribues: `disabled` (granting the ability to disable it's descendants), `form` (inheriting the value of the form attribute id its related to) and `name` (given by the first child &lt;legend&gt; element, used to group its associated elements).
         section.grid_12
-          h2.extra-heading Validation Feedback
+          h2.extra-heading Validating Input Fields
           fieldset
-            legend Personal Information
-            input.invalid(type='text', placeholder='First name')
+            legend In-range / Out-of-range validation
+            input.invalid(type='number', min='1', max='5', placeholder='Rate on a 1-5 scale')
         section
           article.grid_6.far-left
             h3.example-text Example
-            xmp.code. <fieldset>
-              <legend>Personal Information</legend>
-              <label>First name</label>
-              <input type="text" placeholder="First name" class="invalid">
-              </fieldset>
+            xmp.code. <input type='number', min='1', max='5', placeholder='Rate on a 1-5 scale' class='invalid'>
           aside.grid_6.far-right
             h3.example-text Notes
-            p Text inputs are accompanied by a label and wrapped inside a fieldset. The #[span.text-accent :hover] and #[span.text-accent :focus] styles follow our brand colors.
-    div.heading-break
-    article.grid_12#radio
+            p The `:in-range` and `:out-of-range` pseudo-classes enable some validation styling without any need for Javascript.
+          fieldset
+            legend Text area :read-write mutability
+            textarea(name='textarea 1', cols='18', rows='3',) Read-Write
+            textarea(name='textarea 2', cols='18', rows='3', readonly='') Read-Only
+            textarea(name='textarea 3', cols='18', rows='3', disabled='') Disabled
+        section
+          article.grid_6.far-left
+            h3.example-text Example
+            xmp.code.
+              <textarea name="textarea 1" cols="18" rows="3">Read-Write</textarea>
+
+              <textarea name="textarea 2" cols="18" rows="3" readonly />Read-Only</textarea>
+
+              <textarea name="textarea 3" cols="18" rows="3" disabled>Disabled</textarea>
+          aside.grid_6.far-right
+            h3.example-text Notes
+            p The `:read-write`, `read-only`, and `diabled` pseudo-classes represent whether a textarea's contents are user-alterable with their applied styles.
+    div.heading-bre| Choice 1
+    article.grid_12#radioradio-button1
       section.radio
         h2 Radio Buttons
         fieldset
-          input#radio-button1(type='radio', name='radio')
-          label.radio-label(for='radio-button1') Choice A
-          input#radio-button2(type='radio', name='radio')
-          label.radio-label(for='radio-button2') Choice B
+          input#radio01(type='radio', name='radio')
+          label(for='radio01')
+            span
+            | Choice 1
+        fieldset
+          input#radio02(type='radio', name='radio')
+          label(for='radio02')
+            span
+            | Choice 2
+        fieldset
+          input#radio03(type='radio', name='radio')
+          label(for='radio03')
+            span
+            | Choice 3
       section
         figure.grid_6.far-left
           h3.example-text The Code
-          xmp.code <fieldset>
-            <legend>Radio buttons</legend>
-            <input id="radio-button1" type="radio" name="radio">
-            <label class="radio-label" for "radio-button1">Choice A</label>
-            <input id="radio-button2" type="radio" name="radio">
-            <label class="radio-label" for "radio-button2">Choice B</label>
-          </fieldset>
+          xmp.code.
+            <input id="radio01" type="radio" name="radio">
+            <label for "radio01">Choice 1</label>
+
+            <input id="radio02" type="radio" name="radio">
+            <label for "radio02">Choice 2</label>
+
+            <input id="radio03" type="radio" name="radio">
+            <label for "radio02">Choice 3</label>
         aside.grid_6.far-right
           h3.example-text Notes
           p.
-            Custom styled radio buttons. To use, create an input radio button with a label that uses the #[span.text-accent .radio-label ] class.
+            Custom styled radio buttons, styled for all type='radio' inputs with a label proceded by a #[span.text-accent &lt;span&gt; ] element. *Only one button can be selected for radio inputs with the same name.
     div.heading-break
     article.grid_12#checkbox
       section.checkbox

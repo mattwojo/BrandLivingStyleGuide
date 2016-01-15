@@ -50,6 +50,43 @@ input[type=checkbox]:checked + .checkbox-label:before {
   font-size: $small;
   color: $color-alpha;
   text-align: center;
-    line-height: $small;
+  line-height: $small;
+  background-color: yellow;
 }
 
+input[type="radio"] {
+    display:none;
+}
+input[type="radio"] + label {
+    color: red;
+}
+input[type="radio"] + label span {
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    margin: -1px 4px 0 0;
+    vertical-align: middle;
+    cursor: pointer;
+    -moz-border-radius:  50%;
+    border-radius:  50%;
+}
+
+input[type="radio"] + label span {
+     background-color:$color-alpha-dark;
+}
+
+input[type="radio"]:checked + label span {
+     background-color: $color-alpha-light;
+}
+
+input[type="radio"] + label span,
+input[type="radio"]:checked + label span {
+  -webkit-transition:background-color 0.4s linear;
+  -o-transition:background-color 0.4s linear;
+  -moz-transition:background-color 0.4s linear;
+  transition:background-color 0.4s linear;
+}
+
+.radio fieldset {
+  margin: 10px;
+}

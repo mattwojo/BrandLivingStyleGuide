@@ -4,10 +4,6 @@ input {
   width: 100%;
   font-size: $small;
   margin-bottom: $small;
-  &:hover {
-    border: 2px solid $color-grey;
-
-  }
   &:focus {
     border: 2px solid $color-charlie;
     outline: none;
@@ -24,6 +20,21 @@ input {
 }
 
 .invalid {
-  border: 2px solid $color-accent;
+  border: 2px solid $color-charlie;
+  background: white;
 }
 
+input:out-of-range:hover {
+  cursor: help;
+}
+
+input:out-of-range:focus {
+    background: lightgray;
+    border: 3px dotted gray;
+}
+
+textarea { margin: 5px; }
+textarea:read-write { border: 5px solid $color-charlie; }
+textarea:read-write:disabled { border: 5px solid gray; }
+textarea:read-only { border: 5px dotted red; }
+textarea:read-write:focus { border: 5px solid $color-charlie-light; }

@@ -662,26 +662,53 @@ input {
   font-size: 1em;
   margin-bottom: 1em; }
   /* line 7, /home/bolle/Desktop/BrandLivingStyleGuide/sass/module/input */
-  input:hover {
-    border: 2px solid #5D5C5D; }
-  /* line 11, /home/bolle/Desktop/BrandLivingStyleGuide/sass/module/input */
   input:focus {
     border: 2px solid #BFB35A;
     outline: none; }
-  /* line 15, /home/bolle/Desktop/BrandLivingStyleGuide/sass/module/input */
+  /* line 11, /home/bolle/Desktop/BrandLivingStyleGuide/sass/module/input */
   input:required {
     border: 2px solid #8C2318; }
 
-/* line 19, /home/bolle/Desktop/BrandLivingStyleGuide/sass/module/input */
+/* line 15, /home/bolle/Desktop/BrandLivingStyleGuide/sass/module/input */
 .input-label, .dropdown-label {
   color: #354f3c;
   line-height: 1.5em;
   width: 100%;
   display: block; }
 
-/* line 26, /home/bolle/Desktop/BrandLivingStyleGuide/sass/module/input */
+/* line 22, /home/bolle/Desktop/BrandLivingStyleGuide/sass/module/input */
 .invalid {
-  border: 2px solid #8C2318; }
+  border: 2px solid #BFB35A;
+  background: white; }
+
+/* line 27, /home/bolle/Desktop/BrandLivingStyleGuide/sass/module/input */
+input:out-of-range:hover {
+  cursor: help; }
+
+/* line 31, /home/bolle/Desktop/BrandLivingStyleGuide/sass/module/input */
+input:out-of-range:focus {
+  background: lightgray;
+  border: 3px dotted gray; }
+
+/* line 36, /home/bolle/Desktop/BrandLivingStyleGuide/sass/module/input */
+textarea {
+  margin: 5px; }
+
+/* line 37, /home/bolle/Desktop/BrandLivingStyleGuide/sass/module/input */
+textarea:read-write {
+  border: 5px solid #BFB35A; }
+
+/* line 38, /home/bolle/Desktop/BrandLivingStyleGuide/sass/module/input */
+textarea:read-write:disabled {
+  border: 5px solid gray; }
+
+/* line 39, /home/bolle/Desktop/BrandLivingStyleGuide/sass/module/input */
+textarea:read-only {
+  border: 5px dotted red; }
+
+/* line 40, /home/bolle/Desktop/BrandLivingStyleGuide/sass/module/input */
+textarea:read-write:focus {
+  border: 5px solid #dcd5a3; }
 
 /* line 1, /home/bolle/Desktop/BrandLivingStyleGuide/sass/module/table */
 table {
@@ -824,7 +851,46 @@ input[type=checkbox]:checked + .checkbox-label:before {
   font-size: 1em;
   color: #5E8C6A;
   text-align: center;
-  line-height: 1em; }
+  line-height: 1em;
+  background-color: yellow; }
+
+/* line 57, /home/bolle/Desktop/BrandLivingStyleGuide/sass/module/radio */
+input[type="radio"] {
+  display: none; }
+
+/* line 60, /home/bolle/Desktop/BrandLivingStyleGuide/sass/module/radio */
+input[type="radio"] + label {
+  color: red; }
+
+/* line 63, /home/bolle/Desktop/BrandLivingStyleGuide/sass/module/radio */
+input[type="radio"] + label span {
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+  margin: -1px 4px 0 0;
+  vertical-align: middle;
+  cursor: pointer;
+  -moz-border-radius: 50%;
+  border-radius: 50%; }
+
+/* line 74, /home/bolle/Desktop/BrandLivingStyleGuide/sass/module/radio */
+input[type="radio"] + label span {
+  background-color: #354f3c; }
+
+/* line 78, /home/bolle/Desktop/BrandLivingStyleGuide/sass/module/radio */
+input[type="radio"]:checked + label span {
+  background-color: #97b9a0; }
+
+/* line 83, /home/bolle/Desktop/BrandLivingStyleGuide/sass/module/radio */
+input[type="radio"] + label span, input[type="radio"]:checked + label span {
+  -webkit-transition: background-color 0.4s linear;
+  -o-transition: background-color 0.4s linear;
+  -moz-transition: background-color 0.4s linear;
+  transition: background-color 0.4s linear; }
+
+/* line 90, /home/bolle/Desktop/BrandLivingStyleGuide/sass/module/radio */
+.radio fieldset {
+  margin: 10px; }
 
 /* line 1, /home/bolle/Desktop/BrandLivingStyleGuide/sass/module/type */
 .titlefont {
