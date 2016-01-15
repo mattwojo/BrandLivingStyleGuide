@@ -239,6 +239,17 @@ p.article-blog:first-letter {
     background-color: #88A65E;
     color: #384526; }
 
+/* line 35, /home/bolle/Desktop/BrandLivingStyleGuide/sass/module/buttons */
+.grow {
+  transition-property: letter-spacing, color, width;
+  transition-duration: 1.5s; }
+
+/* line 40, /home/bolle/Desktop/BrandLivingStyleGuide/sass/module/buttons */
+.grow:hover {
+  letter-spacing: 4px;
+  color: white;
+  width: 13rem; }
+
 /* line 1, /home/bolle/Desktop/BrandLivingStyleGuide/sass/module/colorpalette */
 .alphaColor, .alphaLight, .alphaDark, .bravoColor, .bravoLight, .bravoDark, .charlieColor, .charlieLight, .charlieDark, .accentColor, .accentLight, .accentDark, .greyColor, .greyLight, .greyDark, .whiteBg {
   height: 100px;

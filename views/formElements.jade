@@ -9,6 +9,8 @@ block content
         li
           a(href="#buttons") Buttons
         li
+          a(href="#dynamicButtons") Dynamic Buttons
+        li
           a(href="#dropdown") Dropdown Menu
         li
           a(href="#inputs") Inputs
@@ -30,6 +32,20 @@ block content
           h3.example-text Notes
           p.
             Add styles to your buttons by using the #[span.text-accent .primary-button ] or #[span.text-accent .secondary-button ] class!
+    article.grid_12#dynamicButtons
+      h2 Dynamic Buttons
+      h3.example-text Example
+      button.primary-button.grow.grid_3 Primary
+      button.secondary-button.grow.grid_3 Secondary
+      section
+        article.grid_6.far-left
+          h3.example-text The Code
+          xmp.code <button class="primary-button grow"></button>
+          xmp.code <button class="secondary-button grow"></button>
+        aside.grid_6.far-right
+          h3.example-text Notes
+          p.
+            Make your buttons a bit more dynamic and noticeable by using the #[span.text-accent .grow ] class to apply some CSS Transition animation (1.5s duration) to the button width, letter-spacing, and font-color.
     div.heading-break
     article.grid_12#dropdown
       h2 Dropdown Menus

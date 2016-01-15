@@ -32,5 +32,14 @@
   }
 }
 
+.grow {
+  transition-property: letter-spacing, color, width;
+  transition-duration: 1.5s;
+}
 
+.grow:hover {
+  letter-spacing: 4px;
+  color: white;
+  width: 13rem;
+}
 
